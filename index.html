@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Porfolio</title>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <!-- Image on the left -->
+            <a class="navbar-brand" href="#home">
+                <span class="header-name">Gian Alcantara</span>
+            </a>
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Skills
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#skills">Technical Skills</a></li>
+                            <li><a class="dropdown-item" href="#soft-skills">Soft Skills</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contact-us">Contact</a>
+                    </li>
+                    <li class="nav-item p-1">
+                        <a class="btn btn-outline-light" href="path_to_resume.pdf" download>Video Introduction</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Home Section-->
+    <section class="container" id="home">
+        <div class="row">
+            <div class="col">
+                <h2 class="welcome-header-h2 animate-left">Hello! Welcome to my Portfolio</h2>
+                <h1 class="welcome-header-h1"><span>I'm Gian Raphael Delos Reyes Alcantara</span></h1>
+                <h2 class="subheading animate-left">Bachelor of Science in Information Technology Specialization in
+                    Software
+                    Engineering</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="/img/codergif.gif" alt="Welcome Image" class="center-image img-fluid animate-left">
+            </div>
+        </div>
+    </section>
+    <!--About-Me Section-->
+    <section class="container about-me-section" id="about-me">
+        <div class="row">
+            <div class="col-md-6 about-me-content animate-left">
+                <h2 class="about-me-section-h1 animate-left text-center">About Me</h2>
+                <div class="bubble-chat animate-left">
+                    <p>
+                        My Name is Gian Raphael Alcantara. A dedicated student enrolled in the software
+                        engineering course at First City Providential
+                        College, my mission revolves around mastering the intricacies of programming languages,
+                        algorithms,
+                        and
+                        software development methodologies. Fueled by a relentless passion for technology and
+                        innovation, I aspire to become a proficient software engineer capable of tackling complex
+                        problems and contributing to groundbreaking projects. My vision extends beyond mere academic
+                        excellence; I aim to leverage my skills to create impactful solutions that address real-world
+                        challenges, whether it's enhancing user experiences, optimizing system performance, or
+                        revolutionizing industries through cutting-edge software solutions.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 about-me-image text-center animate-left">
+                <img src="/img/pic.jpg" alt="About Me Image" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    <!--Education Section-->
+    <section class="container education-section" id="education">
+        <h2 class="section-heading animate-left">Educational Background</h2>
+        <div class="row animate-left" id="education-content">
+            <div class="col-12 animate-left">
+                <div class="card mb-5 p-3" id="card-education">
+                    <img src="/img/lithan.png" class="card-img-top-1 img-fluid" alt="School 1 Logo">
+                    <hr>
+                    <div class="card-body animate-left">
+                        <h5 class="card-title">Lithan Educlaas</h5>
+                        <h6 class="card-text">Eunos Road 8 #07-02 Lifelong Learning Institute Singapore 408601
+                        </h6>
+                        <br>
+                        <h2 class="card-text">Applied Degree</h2>
+                        <p class="card-text">Applied Degree in Software Engineering <br>2023 - Present</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 animate-left">
+                <div class="card mb-5 p-3" id="card-education">
+                    <img src="/img/fcpc.png" class="card-img-top-2 img-fluid" alt="School 2 Logo">
+                    <hr>
+                    <div class="card-body">
+                        <h5 class="card-title animate-left">First City Providential College</h5>
+                        <h6 class="card-text">Blk 7 Phase F Francisco Homes, Narra, San Jose del Monte City, 3023
+                            Bulacan
+                        </h6>
+                        <br>
+                        <h2 class="card-text">Bachelors Degree</h2>
+                        <p class="card-text">Bachelor of Science in Information Technology Specialization in Software
+                            Engineering - 1st Year <br>2023 - Present</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 animate-left">
+                <div class="card mb-5 p-3" id="card-education">
+                    <img src="/img/spnhs.png" class="card-img-top-3 img-fluid" alt="School 3 Logo">
+                    <hr>
+                    <div class="card-body animate-left">
+                        <h5 class="card-title animate-left">Sapang Palay National High School</h5>
+                        <h6 class="card-text">152 Kapiwa St, San Jose del Monte City, Bulacan
+                        </h6>
+                        <br>
+                        <h2 class="card-text">Senior High School</h2>
+                        <p class="card-text animate-left">Grade - 11 (General Academic Strand)<br> 2021 - 2022</p>
+                        <p class="card-text animate-left">Grade - 12 (General Academic Strand)<br> 2021 - 2022 <br> With
+                            Honors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Skills Section-->
+    <section class="container skills-section" id="skills">
+        <h2 class="section-heading text-center">Skills</h2>
+        <div class="row">
+            <!-- Front End Skills -->
+            <div class="col-lg-12">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title text-center" id="skill-heading">Front End Development</h3>
+                        <hr>
+                        <div class="row justify-content-center">
+                            <div class="col-md-3 text-center">
+                                <div class="skill-wrapper">
+                                    <img src="/img/htmlimg.png" alt="HTML Logo" class="skill-logo img-fluid">
+                                    <p>HTML</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="skill-wrapper">
+                                    <img src="/img/cssimg.png" alt="CSS Logo" class="skill-logo img-fluid">
+                                    <p>CSS</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="skill-wrapper">
+                                    <img src="/img/bootstrapimg.png" alt="Bootstrap Logo" class="skill-logo img-fluid">
+                                    <p>Bootstrap</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="skill-wrapper">
+                                    <img src="/img/jsimg.png" alt="Javascript Logo" class="skill-logo img-fluid">
+                                    <p>JavaScript</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="skill-wrapper">
+                                    <img src="/img/jqueryimg.png" alt="JQuery Logo" class="skill-logo img-fluid">
+                                    <p>JQuery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Back End Skills -->
+            <div class="col-lg-12">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title text-center" id="skill-heading">Back End Development</h3>
+                        <hr>
+                        <div class="row justify-content-center">
+                            <div class="col-md-3 text-center">
+                                <div class="skill-wrapper">
+                                    <img src="/img/javaimg.png" alt="Java Logo" class="skill-logo img-fluid">
+                                    <p>Java</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="skill-wrapper">
+                                    <br><br>
+                                    <img src="/img/springbootimg.png" alt="Spring Boot Logo"
+                                        class="skill-logo img-fluid">
+                                    <br><br>
+                                    <p>Spring Boot</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="skill-wrapper">
+                                    <img src="/img/mysqlimg.png" alt="MySQL Logo" class="skill-logo img-fluid">
+                                    <p>MySQL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prototyping Skills -->
+            <div class="col-lg-12">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title text-center" id="skill-heading">User Interface/User Experience Design</h3>
+                        <hr>
+                        <div class="row justify-content-center">
+                            <div class="col-md-3 text-center">
+                                <div class="skill-wrapper">
+                                    <br>
+                                    <img src="/img/axureimg.png" alt="HTML Logo" class="skill-logo img-fluid">
+                                    <p>Axure RP</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="skill-wrapper">
+                                    <br>
+                                    <img src="/img/figmaimg.png" alt="CSS Logo" class="skill-logo img-fluid">
+                                    <br><br>
+                                    <p>Figma</p>
+                                </div>
+                            </div>
+                            <!-- Add prototyping skills as needed -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Server Runtime Skills -->
+                <div class="col-lg-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title text-center" id="skill-heading">Website Hosting</h3>
+                            <hr>
+                            <div class="row justify-content-center">
+                                <div class="col-md-3 text-center">
+                                    <div class="skill-wrapper">
+                                        <img src="/img/apacheimg.png" alt="Apache Logo" class="skill-logo img-fluid">
+                                        <p>Apache</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="skill-wrapper">
+                                        <img src="/img/tomcatpng.png" alt="Tomcat Logo" class="skill-logo img-fluid">
+                                        <p>Tomcat</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--Soft Skills Section-->
+    <section class="container-soft-skills-section" id="soft-skills">
+        <h2 class="section-heading">Soft Skills</h2>
+        <div class="row justify-content-center">
+            <!-- Soft Skills Cards -->
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title" id="soft-skill-heading">Communication</h3>
+                        <hr>
+                        <!-- Description of communication skill -->
+                        <p class="card-text" id="soft-skill-text">Effective verbal and written communication abilities,
+                            including active
+                            listening and clear articulation of ideas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title" id="soft-skill-heading">Teamwork</h3>
+                        <hr>
+                        <!-- Description of teamwork skill -->
+                        <p class="card-text" id="soft-skill-text">Collaborative approach to work, ability to work
+                            effectively in a team
+                            environment, and contribute positively towards team goals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title" id="soft-skill-heading">Problem-solving</h3>
+                        <hr>
+                        <!-- Description of problem-solving skill -->
+                        <p class="card-text" id="soft-skill-text">Analytical thinking, creativity, and resourcefulness
+                            in identifying and
+                            resolving challenges.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title" id="soft-skill-heading">Adaptability</h3>
+                        <hr>
+                        <!-- Description of adaptability skill -->
+                        <p class="card-text" id="soft-skill-text">Flexibility and willingness to adapt to changing
+                            circumstances,
+                            environments, and requirements.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title" id="soft-skill-heading">Leadership</h3>
+                        <hr>
+                        <!-- Description of leadership skill -->
+                        <p class="card-text" id="soft-skill-text">Ability to lead and inspire others, delegate tasks
+                            effectively, and
+                            provide guidance towards achieving objectives.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title" id="soft-skill-heading">Time Management</h3>
+                        <hr>
+                        <!-- Description of time management skill -->
+                        <p class="card-text" id="soft-skill-text">Efficient organization of tasks and priorities,
+                            ability to meet
+                            deadlines, and optimize productivity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title" id="soft-skill-heading">Creativity</h3>
+                        <hr>
+                        <!-- Description of creativity skill -->
+                        <p class="card-text" id="soft-skill-text">Thinking outside the box, generating innovative ideas,
+                            and applying imaginative solutions to problems.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more soft skills cards as needed -->
+        </div>
+    </section>
+    <!--Projects Section-->
+    <section class="container projects-section" id="projects">
+        <h2 class="section-heading text-center">Projects</h2>
+        <div class="row justify-content-center">
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/project-1.png" class="card-img-top" alt="Project 1 Image" id="proj-1-img">
+                    <div class="card-body" id="project-card">
+                        <h5 class="card-title" id="project-heading">North Sussex Judo</h5>
+                        <p class="card-text">Programming Foundations</p>
+                        <div class="languages-used">
+                            <span class="badge badge-primary">Java</span>
+                        </div>
+                        <br>
+                        <p class="card-text" id="project-text">North Sussex Judo seeks a user-friendly program to
+                            swiftly compute the
+                            monthly training fees for their athletes. This program simplifies fee calculations, ensuring
+                            accuracy and ease in managing athletes' financial commitments.</p>
+                        <div class="project-button"><a href="#" class="btn btn-primary">Download Source Code</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/project-2.png" class="card-img-top" alt="Project 2 Image" id="proj-2-img">
+                    <div class="card-body" id="project-card">
+                        <h5 class="card-title" id="project-heading">DoBu Martial Arts</h5>
+                        <p class="card-text">Front End Web Development</p>
+                        <div class="languages-used">
+                            <span class="badge badge-primary">HTML</span>
+                            <span class="badge badge-primary">CSS</span>
+                            <span class="badge badge-primary">JavaScript</span>
+                            <span class="badge badge-primary">jQuery</span>
+                            <span class="badge badge-primary">Bootstrap</span>
+                        </div>
+                        <br>
+                        <p class="card-text" id="project-text">DoBu Martial Arts is a martial arts gym. The gym offers
+                            classes in a number of different
+                            martial arts, as well as fitness training and self-defence courses.</p>
+                        <br><br>
+                        <div class="project-button"><a href="#" class="btn btn-primary">Download Source Code</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/project-3.png" class="card-img-top" alt="Project 3 Image" id="proj-3-img">
+                    <div class="card-body" id="project-card">
+                        <h5 class="card-title" id="project-heading">Boutiqa E-Commerce</h5>
+                        <p class="card-text">UI Frameworks</p>
+                        <div class="languages-used">
+                            <span class="badge badge-primary">Axure RP</span>
+                        </div>
+                        <br>
+                        <p class="card-text" id="project-text"> Boutiqa, a marketplace
+                            for sellers to promote their products and for consumers to purchase with ease. The company
+                            wants to have a consumer-centric application with an enhanced user experience.</p>
+                        <br>
+                        <div class="project-button"><a href="#" class="btn btn-primary">View Project</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/project-4.png" class="card-img-top" alt="Project 4 Image" id="proj-4-img">
+                    <div class="card-body" id="project-card">
+                        <h5 class="card-title" id="project-heading">Enomy Finances</h5>
+                        <p class="card-text">Web Development Foundations</p>
+                        <div class="languages-used">
+                            <span class="badge badge-primary">HTML</span>
+                            <span class="badge badge-primary">CSS</span>
+                            <span class="badge badge-primary">JavaScript</span>
+                            <span class="badge badge-primary">Java (Spring Framework)</span>
+                        </div>
+                        <p class="card-text" id="project-text">Suspendisse efficitur sem a arcu hendrerit, nec venenatis
+                            nisi tincidunt.
+                            In hac habitasse platea dictumst.</p>
+                        <div class="project-button"><a href="#" class="btn btn-primary">View Project</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact-Us Section-->
+    <section class="container-fluid contact-section" id="contact-us">
+        <h2 class="section-heading text-center">Contact Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title" id="contact-name">Gian Raphael Delos Reyes Alcantara</h5>
+                        <p class="card-text" id="contact-number">+63 922 774 3588</p>
+                        <p class="card-text" id="contact-address">Maharlika Street, City of San Jose Del Monte Bulacan,
+                            Philippines</p>
+                        <div class="container">
+                            <!-- GitHub Section -->
+                            <h2 class="social-heading">GitHub</h2>
+                            <div class="social-links">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <img src="/img/github-logo.png" alt="GitHub Logo" class="social-logo">
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://github.com/CritaxoniaDev" class="account-name">Gian
+                                            Alcantara</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Facebook Section -->
+                            <h2 class="social-heading">Facebook</h2>
+                            <div class="social-links">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <img src="/img/facebook-logo.png" alt="Facebook Logo" class="social-logo">
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://www.facebook.com/profile.php?id=100074224394563"
+                                            class="account-name">Gian
+                                            Alcantara</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- LinkedIn Section -->
+                            <h2 class="social-heading">LinkedIn</h2>
+                            <div class="social-links">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <img src="/img/linkedin-logo.png" alt="LinkedIn Logo" class="social-logo">
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://www.linkedin.com/in/gian-alcantara-7293282a9/"
+                                            class="account-name">Gian
+                                            Alcantara</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Gmail Section -->
+                            <h2 class="social-heading">Gmail</h2>
+                            <div class="social-links">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <img src="/img/google-logo.png" alt="Gmail Logo" class="social-logo">
+                                    </div>
+                                    <div class="col">
+                                        <a href="mailto:youremail@gmail.com"
+                                            class="account-name">raphaelalcantara51@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <iframe width="650" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?width=724&amp;height=400&amp;hl=en&amp;q=%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <a href='https://www.easybooking.eu/'>Hotelsoftware</a>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="text-light text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 - Gian Alcantara. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type='text/javascript'
+    src='https://embedmaps.com/google-maps-authorization/script.js?id=b3aff6766cc854bc3edc64e29e0032bebd8afd72'></script>
+
+</html>
