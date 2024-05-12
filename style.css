@@ -238,6 +238,10 @@ body {
     color: rgb(0, 0, 0);
 }
 
+#school-name {
+    font-family: "Lilita One", sans-serif;
+}
+
 .section-heading {
     font-size: 50px;
     font-family: "Roboto Condensed", sans-serif;
@@ -485,18 +489,31 @@ footer {
     }
 }
 
-
-@media (max-width: 768px) {
-    .card-title {
-        font-size: 1.2rem; /* Adjust the font size as needed */
-    }
-}
-
 @media (max-width: 768px) {
     #home {
         background-position:  50% 8%; /* Adjust background position for mobile */
         padding: 50px; /* Adjust padding for mobile */
         margin: 0; /* Reset margin for mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    #skill-heading {
+        font-size: 25px;
+    }
+
+    #soft-skill-heading {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.2rem; /* Adjust the font size as needed */
+    }
+    #school-name {
+        font-size: 1.8rem;
+        text-align: left;
     }
 }
 
