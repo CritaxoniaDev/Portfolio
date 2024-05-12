@@ -493,6 +493,14 @@ footer {
 }
 
 @media (max-width: 768px) {
+    #home {
+        background-position:  50% 8%; /* Adjust background position for mobile */
+        padding: 50px; /* Adjust padding for mobile */
+        margin: 0; /* Reset margin for mobile */
+    }
+}
+
+@media (max-width: 768px) {
     .about-me-section {
         padding: 20px; /* Add padding for better spacing on small screens */
     }
