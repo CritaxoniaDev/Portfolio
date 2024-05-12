@@ -363,7 +363,7 @@ body {
 }
 
 #project-heading {
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Merriweather Sans", sans-serif;
 }
 
 #project-card {
@@ -505,6 +505,9 @@ footer {
     #soft-skill-heading {
         font-size: 25px;
     }
+    #soft-skill-text {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -547,6 +550,13 @@ footer {
 }
 
 @media (max-width: 768px) {
+    #project-heading {
+        font-size: 24px;
+        text-align: left;
+    }
+    #project-text {
+        font-size: 14px;
+    }
     .projects-section {
         padding: 20px; /* Add padding for better spacing on small screens */
     }
@@ -564,3 +574,22 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    #contact-name {
+        font-size: 30px;
+        text-align: left;
+    }
+    #contact-number {
+        font-size: 17px;
+    }
+    #contact-address {
+        font-size: 16px;
+        text-align: left;
+    }
+    .account-name {
+        font-size: 12px;
+    }
+    #footer {
+        font-size: 17px;
+    }
+}
