@@ -15,8 +15,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
     <title>Porfolio</title>
 </head>
 
@@ -37,15 +40,15 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#about-me">About Me</a>
+                        <a class="nav-link active" href="#about-me"><i class="fas fa-user"></i> About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#education">Education</a>
+                        <a class="nav-link active" href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Skills
+                            <i class="fas fa-cogs"></i> Skills
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#skills">Technical Skills</a></li>
@@ -53,13 +56,13 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#projects">Projects</a>
+                        <a class="nav-link active" href="#projects"><i class="fas fa-code"></i> Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#contact-us">Contact</a>
+                        <a class="nav-link active" href="#contact-us"><i class="fas fa-envelope"></i> Contact</a>
                     </li>
                     <li class="nav-item p-1">
-                        <a class="btn btn-outline-light" href="path_to_resume.pdf" download>Video Introduction</a>
+                        <a class="btn btn-outline-light" href="path_to_resume.pdf" download><i class="fas fa-video"></i> Video Introduction</a>
                     </li>
                 </ul>
             </div>
@@ -68,17 +71,17 @@
     <!--Home Section-->
     <section class="container" id="home">
         <div class="row">
-            <div class="col">
-                <h2 class="welcome-header-h2 animate-left">Hello! Welcome to my Portfolio</h2>
-                <h1 class="welcome-header-h1"><span>I'm Gian Raphael Delos Reyes Alcantara</span></h1>
-                <h2 class="subheading animate-left">Bachelor of Science in Information Technology Specialization in
+            <div class="col-md-12">
+                <h2 class="welcome-header-h2-skills text-center"></h2>
+                <h1 class="welcome-header-h1 text-center"><span>I'm Gian Raphael Delos Reyes Alcantara</span></h1>
+                <h2 class="subheading text-center">Bachelor of Science in Information Technology Specialization in
                     Software
                     Engineering</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <img src="img/codergif.gif" alt="Welcome Image" class="center-image img-fluid animate-left">
+            <div class="col-md-12">
+                <img src="/img/codergif.gif" alt="Welcome Image" class="center-image img-fluid d-block mx-auto">
             </div>
         </div>
     </section>
@@ -104,7 +107,7 @@
                 </div>
             </div>
             <div class="col-md-6 about-me-image text-center animate-left">
-                <img src="img/pic.jpg" alt="About Me Image" class="img-fluid">
+                <img src="/img/pic.jpg" alt="About Me Image" class="img-fluid">
             </div>
         </div>
     </section>
@@ -114,7 +117,7 @@
         <div class="row animate-left" id="education-content">
             <div class="col-12 animate-left">
                 <div class="card mb-5 p-3" id="card-education">
-                    <img src="img/lithan.png" class="card-img-top-1 img-fluid" alt="School 1 Logo">
+                    <img src="/img/lithan.png" class="card-img-top-1 img-fluid" alt="School 1 Logo">
                     <hr>
                     <div class="card-body animate-left">
                         <h5 class="card-title">Lithan Educlaas</h5>
@@ -128,7 +131,7 @@
             </div>
             <div class="col-12 animate-left">
                 <div class="card mb-5 p-3" id="card-education">
-                    <img src="img/fcpc.png" class="card-img-top-2 img-fluid" alt="School 2 Logo">
+                    <img src="/img/fcpc.png" class="card-img-top-2 img-fluid" alt="School 2 Logo">
                     <hr>
                     <div class="card-body">
                         <h5 class="card-title animate-left">First City Providential College</h5>
@@ -144,7 +147,7 @@
             </div>
             <div class="col-12 animate-left">
                 <div class="card mb-5 p-3" id="card-education">
-                    <img src="img/spnhs.png" class="card-img-top-3 img-fluid" alt="School 3 Logo">
+                    <img src="/img/spnhs.png" class="card-img-top-3 img-fluid" alt="School 3 Logo">
                     <hr>
                     <div class="card-body animate-left">
                         <h5 class="card-title animate-left">Sapang Palay National High School</h5>
@@ -173,31 +176,36 @@
                         <div class="row justify-content-center">
                             <div class="col-md-3 text-center">
                                 <div class="skill-wrapper">
-                                    <img src="img/htmlimg.png" alt="HTML Logo" class="skill-logo img-fluid">
+                                    <img src="/img/htmlimg.png" id="skill-pic" alt="HTML Logo"
+                                        class="skill-logo img-fluid">
                                     <p>HTML</p>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center">
                                 <div class="skill-wrapper">
-                                    <img src="img/cssimg.png" alt="CSS Logo" class="skill-logo img-fluid">
+                                    <img src="/img/cssimg.png" id="skill-pic" alt="CSS Logo"
+                                        class="skill-logo img-fluid">
                                     <p>CSS</p>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center">
                                 <div class="skill-wrapper">
-                                    <img src="img/bootstrapimg.png" alt="Bootstrap Logo" class="skill-logo img-fluid">
+                                    <img src="/img/bootstrapimg.png" id="skill-pic" alt="Bootstrap Logo"
+                                        class="skill-logo img-fluid">
                                     <p>Bootstrap</p>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center">
                                 <div class="skill-wrapper">
-                                    <img src="img/jsimg.png" alt="Javascript Logo" class="skill-logo img-fluid">
+                                    <img src="/img/jsimg.png" id="skill-pic" alt="Javascript Logo"
+                                        class="skill-logo img-fluid">
                                     <p>JavaScript</p>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center">
                                 <div class="skill-wrapper">
-                                    <img src="img/jqueryimg.png" alt="JQuery Logo" class="skill-logo img-fluid">
+                                    <img src="/img/jqueryimg.png" id="skill-pic" alt="JQuery Logo"
+                                        class="skill-logo img-fluid">
                                     <p>JQuery</p>
                                 </div>
                             </div>
@@ -214,23 +222,32 @@
                         <div class="row justify-content-center">
                             <div class="col-md-3 text-center">
                                 <div class="skill-wrapper">
-                                    <img src="img/javaimg.png" alt="Java Logo" class="skill-logo img-fluid">
+                                    <img src="/img/javaimg.png" id="skill-pic" alt="Java Logo"
+                                        class="skill-logo img-fluid">
                                     <p>Java</p>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center">
                                 <div class="skill-wrapper">
-                                    <br><br>
-                                    <img src="img/springbootimg.png" alt="Spring Boot Logo"
+                                    
+                                    <img src="/img/springbootimg.png" id="skill-pic" alt="Spring Boot Logo"
                                         class="skill-logo img-fluid">
-                                    <br><br>
+                                    
                                     <p>Spring Boot</p>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center">
                                 <div class="skill-wrapper">
-                                    <img src="img/mysqlimg.png" alt="MySQL Logo" class="skill-logo img-fluid">
+                                    <img src="/img/mysqlimg.png" id="skill-pic" alt="MySQL Logo"
+                                        class="skill-logo img-fluid">
                                     <p>MySQL</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="skill-wrapper" id="spring-mvc">
+                                    <img src="/img/springmvc.png" id="skill-pic" alt="MySQL Logo"
+                                        class="skill-logo img-fluid">
+                                    <p>Spring MVC</p>
                                 </div>
                             </div>
                         </div>
@@ -248,14 +265,15 @@
                             <div class="col-md-3 text-center">
                                 <div class="skill-wrapper">
                                     <br>
-                                    <img src="img/axureimg.png" alt="HTML Logo" class="skill-logo img-fluid">
+                                    <img src="/img/axureimg.png" id="skill-pic" alt="HTML Logo"
+                                        class="skill-logo img-fluid">
                                     <p>Axure RP</p>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center">
                                 <div class="skill-wrapper">
-                                    <br>
-                                    <img src="img/figmaimg.png" alt="CSS Logo" class="skill-logo img-fluid">
+                                    <img src="/img/figmaimg.png" id="skill-pic" alt="CSS Logo"
+                                        class="skill-logo img-fluid">
                                     <br><br>
                                     <p>Figma</p>
                                 </div>
@@ -273,13 +291,15 @@
                             <div class="row justify-content-center">
                                 <div class="col-md-3 text-center">
                                     <div class="skill-wrapper">
-                                        <img src="img/apacheimg.png" alt="Apache Logo" class="skill-logo img-fluid">
+                                        <img src="/img/apacheimg.png" id="skill-pic" alt="Apache Logo"
+                                            class="skill-logo img-fluid">
                                         <p>Apache</p>
                                     </div>
                                 </div>
                                 <div class="col-md-3 text-center">
                                     <div class="skill-wrapper">
-                                        <img src="img/tomcatpng.png" alt="Tomcat Logo" class="skill-logo img-fluid">
+                                        <img src="/img/tomcatpng.png" id="skill-pic" alt="Tomcat Logo"
+                                            class="skill-logo img-fluid">
                                         <p>Tomcat</p>
                                     </div>
                                 </div>
@@ -387,7 +407,7 @@
             <!-- Project 1 -->
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img src="img/project-1.png" class="card-img-top" alt="Project 1 Image" id="proj-1-img">
+                    <img src="/img/project-1.png" class="card-img-top" alt="Project 1 Image" id="proj-1-img">
                     <div class="card-body" id="project-card">
                         <h5 class="card-title" id="project-heading">North Sussex Judo</h5>
                         <p class="card-text">Programming Foundations</p>
@@ -406,7 +426,7 @@
             <!-- Project 2 -->
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img src="img/project-2.png" class="card-img-top" alt="Project 2 Image" id="proj-2-img">
+                    <img src="/img/project-2.png" class="card-img-top" alt="Project 2 Image" id="proj-2-img">
                     <div class="card-body" id="project-card">
                         <h5 class="card-title" id="project-heading">DoBu Martial Arts</h5>
                         <p class="card-text">Front End Web Development</p>
@@ -429,12 +449,12 @@
             <!-- Project 3 -->
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img src="img/project-3.png" class="card-img-top" alt="Project 3 Image" id="proj-3-img">
+                    <img src="/img/project-3.png" class="card-img-top" alt="Project 3 Image" id="proj-3-img">
                     <div class="card-body" id="project-card">
                         <h5 class="card-title" id="project-heading">Boutiqa E-Commerce</h5>
                         <p class="card-text">UI Frameworks</p>
                         <div class="languages-used">
-                            <span class="badge badge-primary">Axure RP</span>
+                            <span class="badge badge-primary">Axure RP 10</span>
                         </div>
                         <br>
                         <p class="card-text" id="project-text"> Boutiqa, a marketplace
@@ -448,15 +468,36 @@
             <!-- Project 4 -->
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img src="img/project-4.png" class="card-img-top" alt="Project 4 Image" id="proj-4-img">
+                    <img src="/img/project-4.png" class="card-img-top" alt="Project 4 Image" id="proj-4-img">
                     <div class="card-body" id="project-card">
                         <h5 class="card-title" id="project-heading">Enomy Finances</h5>
                         <p class="card-text">Web Development Foundations</p>
                         <div class="languages-used">
-                            <span class="badge badge-primary">HTML</span>
+                            <span class="badge badge-primary">JSP</span>
                             <span class="badge badge-primary">CSS</span>
                             <span class="badge badge-primary">JavaScript</span>
                             <span class="badge badge-primary">Java (Spring Framework)</span>
+                        </div><br><br>
+                        <p class="card-text" id="project-text">Enomy-Finances operates within the financial sector,
+                            specifically focusing on personal finance services. This sector is a critical component of
+                            the broader financial services industry.</p>
+                        <div class="project-button"><a href="#" class="btn btn-primary">View Project</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/project-4.png" class="card-img-top" alt="Project 4 Image" id="proj-4-img">
+                    <div class="card-body" id="project-card">
+                        <h5 class="card-title" id="project-heading">ABC Cars Portal</h5>
+                        <p class="card-text">Application Development and Processes</p>
+                        <div class="languages-used">
+                            <span class="badge badge-primary">JSP</span>
+                            <span class="badge badge-primary">CSS</span>
+                            <span class="badge badge-primary">JavaScript</span>
+                            <span class="badge badge-primary">Java (Spring Framework)</span>
+                            <span class="badge badge-primary">Spring Boot </span>
                         </div>
                         <p class="card-text" id="project-text">Enomy-Finances operates within the financial sector,
                             specifically focusing on personal finance services. This sector is a critical component of
@@ -484,7 +525,7 @@
                             <div class="social-links">
                                 <div class="row">
                                     <div class="col-auto">
-                                        <img src="img/github-logo.png" alt="GitHub Logo" class="social-logo">
+                                        <img src="/img/github-logo.png" alt="GitHub Logo" class="social-logo">
                                     </div>
                                     <div class="col">
                                         <a href="https://github.com/CritaxoniaDev" class="account-name">Gian
@@ -498,7 +539,7 @@
                             <div class="social-links">
                                 <div class="row">
                                     <div class="col-auto">
-                                        <img src="img/facebook-logo.png" alt="Facebook Logo" class="social-logo">
+                                        <img src="/img/facebook-logo.png" alt="Facebook Logo" class="social-logo">
                                     </div>
                                     <div class="col">
                                         <a href="https://www.facebook.com/profile.php?id=100074224394563"
@@ -513,7 +554,7 @@
                             <div class="social-links">
                                 <div class="row">
                                     <div class="col-auto">
-                                        <img src="img/linkedin-logo.png" alt="LinkedIn Logo" class="social-logo">
+                                        <img src="/img/linkedin-logo.png" alt="LinkedIn Logo" class="social-logo">
                                     </div>
                                     <div class="col">
                                         <a href="https://www.linkedin.com/in/gian-alcantara-7293282a9/"
@@ -528,7 +569,7 @@
                             <div class="social-links">
                                 <div class="row">
                                     <div class="col-auto">
-                                        <img src="img/google-logo.png" alt="Gmail Logo" class="social-logo">
+                                        <img src="/img/google-logo.png" alt="Gmail Logo" class="social-logo">
                                     </div>
                                     <div class="col">
                                         <a href="mailto:youremail@gmail.com"
@@ -542,9 +583,8 @@
             </div>
             <div class="col-md-6">
                 <div class="map-container">
-                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    id="gmap_canvas"
-                    src="https://maps.google.com/maps?width=724&amp;height=400&amp;hl=en&amp;q=%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
+                        src="https://maps.google.com/maps?width=724&amp;height=400&amp;hl=en&amp;q=%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                 </div>
                 <a href='https://www.easybooking.eu/'>Hotelsoftware</a>
             </div>
