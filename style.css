@@ -36,7 +36,7 @@
 }
 
 body {
-    background-image: url(/img/triangle.svg), url(/img/hexagon.svg), url(/img/square.svg), url(/img/circle.svg);
+    background-image: url(img/triangle.svg), url(img/hexagon.svg), url(img/square.svg), url(img/circle.svg);
     background-size: 45% auto, 40% auto, 40% auto, 45% auto;
     background-position: -25% 1%, 113% 2%, 65% 1%, 20% 2.5%;
     background-repeat: no-repeat;
@@ -103,7 +103,7 @@ body {
 }
 
 #home {
-    background-image: url(/img/llline.svg);
+    background-image: url(img/llline.svg);
     background-size: 81% auto;
     background-position: 49% -3%;
     background-repeat: no-repeat;
@@ -252,7 +252,7 @@ body {
 }
 
 .card-img-top-1 {
-    background-image: url(/img/lithanimg.png);
+    background-image: url(img/lithanimg.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 300px;
@@ -262,7 +262,7 @@ body {
 }
 
 .card-img-top-2 {
-    background-image: url(/img/fcpcimg.png);
+    background-image: url(img/fcpcimg.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 300px;
@@ -272,7 +272,7 @@ body {
 }
 
 .card-img-top-3 {
-    background-image: url(/img/spnhsimg.png);
+    background-image: url(img/spnhsimg.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 300px;
@@ -370,7 +370,8 @@ body {
 #proj-1-img, 
 #proj-2-img, 
 #proj-3-img, 
-#proj-4-img {
+#proj-4-img
+#proj-5-img{
     height: 175px;
 }
 
