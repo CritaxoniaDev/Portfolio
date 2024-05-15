@@ -371,6 +371,10 @@ body {
     font-family: "Merriweather Sans", sans-serif;
 }
 
+#module-text {
+    font-size: 18px;
+}
+
 #project-card {
     background-color: #d4edda;
     border-radius: 5px;
