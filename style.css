@@ -320,6 +320,10 @@ body {
     padding-bottom: 1px;
 }
 
+.bi {
+    font-size: 5rem; /* Adjust the size as needed */
+}
+
 #soft-skill-heading {
     font-size: 30px;
     padding: 10px;
