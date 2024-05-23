@@ -127,11 +127,11 @@
                     <hr>
                     <div class="card-body animate-left">
                         <h5 class="card-title" id="school-name">Lithan Educlaas</h5>
-                        <h6 class="card-text">Eunos Road 8 #07-02 Lifelong Learning Institute Singapore 408601
+                        <h6 class="card-text address">Eunos Road 8 #07-02 Lifelong Learning Institute Singapore 408601
                         </h6>
                         <br>
-                        <h2 class="card-text">Applied Degree</h2>
-                        <p class="card-text">Applied Degree in Software Engineering <br>2023 - Present</p>
+                        <h2 class="card-text" id="degree">Applied Degree</h2>
+                        <p class="card-text grade">Applied Degree in Software Engineering <br>2023 - Present</p>
                     </div>
                 </div>
             </div>
@@ -141,12 +141,12 @@
                     <hr>
                     <div class="card-body">
                         <h5 class="card-title animate-left" id="school-name">First City Providential College</h5>
-                        <h6 class="card-text">Blk 7 Phase F Francisco Homes, Narra, San Jose del Monte City, 3023
+                        <h6 class="card-text address">Blk 7 Phase F Francisco Homes, Narra, San Jose del Monte City, 3023
                             Bulacan
                         </h6>
                         <br>
-                        <h2 class="card-text">Bachelors Degree</h2>
-                        <p class="card-text">Bachelor of Science in Information Technology Specialization in Software
+                        <h2 class="card-text" id="degree">Bachelors Degree</h2>
+                        <p class="card-text grade">Bachelor of Science in Information Technology Specialization in Software
                             Engineering - 1st Year <br>2023 - Present</p>
                     </div>
                 </div>
@@ -157,12 +157,12 @@
                     <hr>
                     <div class="card-body animate-left">
                         <h5 class="card-title animate-left" id="school-name">Sapang Palay National High School</h5>
-                        <h6 class="card-text">152 Kapiwa St, San Jose del Monte City, Bulacan
+                        <h6 class="card-text address">152 Kapiwa St, San Jose del Monte City, Bulacan
                         </h6>
                         <br>
-                        <h2 class="card-text">Senior High School</h2>
-                        <p class="card-text animate-left">Grade - 11 (General Academic Strand)<br> 2021 - 2022</p>
-                        <p class="card-text animate-left">Grade - 12 (General Academic Strand)<br> 2021 - 2022 <br> With
+                        <h2 class="card-text" id="degree">Senior High School</h2>
+                        <p class="card-text animate-left grade">Grade - 11 (General Academic Strand)<br> 2021 - 2022</p>
+                        <p class="card-text animate-left grade">Grade - 12 (General Academic Strand)<br> 2021 - 2022 <br> With
                             Honors</p>
                     </div>
                 </div>
@@ -177,7 +177,9 @@
             <div class="col-lg-12">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h3 class="card-title text-center" id="skill-heading">Front End Development</h3>
+                        <h3 class="card-title text-center" id="skill-heading">
+                            <i class="bi bi-code-slash" id="bi-fed"></i> Front End Development
+                        </h3>
                         <hr>
                         <div class="row justify-content-center">
                             <div class="col-md-3 text-center">
@@ -223,7 +225,9 @@
             <div class="col-lg-12">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h3 class="card-title text-center" id="skill-heading">Back End Development</h3>
+                        <h3 class="card-title text-center" id="skill-heading"><i class="bi bi-server" id="bi-bed"></i>
+                            Back End
+                            Development</h3>
                         <hr>
                         <div class="row justify-content-center">
                             <div class="col-md-3 text-center">
@@ -265,7 +269,9 @@
             <div class="col-lg-12">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h3 class="card-title text-center" id="skill-heading">User Interface/User Experience Design</h3>
+                        <h3 class="card-title text-center" id="skill-heading"> <i class="bi bi-brush" id="bi-ui"></i>
+                            User
+                            Interface/User Experience Design</h3>
                         <hr>
                         <div class="row justify-content-center">
                             <div class="col-md-3 text-center">
@@ -292,7 +298,9 @@
                 <div class="col-lg-12">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h3 class="card-title text-center" id="skill-heading">Website Hosting</h3>
+                            <h3 class="card-title text-center" id="skill-heading"><i class="bi bi-hdd-stack"
+                                    id="bi-webhost"></i> Website
+                                Hosting</h3>
                             <hr>
                             <div class="row justify-content-center">
                                 <div class="col-md-3 text-center">
@@ -323,7 +331,7 @@
             <div class="col-lg-4 mb-3">
                 <div class="card h-100 border-0 shadow">
                     <div class="card-body text-center" id="softskill-card">
-                        <i class="bi bi-chat-square-quote h1 text-primary mb-4"></i>
+                        <i class="bi bi-chat-square-quote h1 mb-4" id="bi-1"></i>
                         <h3 class="card-title mb-3" id="soft-skill-heading">Communication</h3>
                         <p class="card-text" id="soft-skill-text">Effective verbal and written communication abilities,
                             including active listening and clear articulation of ideas.</p>
@@ -333,7 +341,7 @@
             <div class="col-lg-4 mb-3">
                 <div class="card h-100 border-0 shadow">
                     <div class="card-body text-center" id="softskill-card">
-                        <i class="bi bi-people h1 text-primary mb-4"></i>
+                        <i class="bi bi-people h1 mb-4" id="bi-2"></i>
                         <h3 class="card-title mb-3" id="soft-skill-heading">Teamwork</h3>
                         <p class="card-text" id="soft-skill-text">Collaborative approach to work, ability to work
                             effectively in a team environment, and contribute positively towards team goals.</p>
@@ -343,7 +351,7 @@
             <div class="col-lg-4 mb-3">
                 <div class="card h-100 border-0 shadow">
                     <div class="card-body text-center" id="softskill-card">
-                        <i class="bi bi-puzzle h1 text-primary mb-4"></i>
+                        <i class="bi bi-puzzle h1 mb-4" id="bi-3"></i>
                         <h3 class="card-title mb-3" id="soft-skill-heading">Problem-solving</h3>
                         <p class="card-text" id="soft-skill-text">Analytical thinking, creativity, and resourcefulness
                             in identifying and resolving challenges.</p>
@@ -353,7 +361,7 @@
             <div class="col-lg-4 mb-3">
                 <div class="card h-100 border-0 shadow">
                     <div class="card-body text-center" id="softskill-card">
-                        <i class="bi bi-lightbulb h1 text-primary mb-4"></i>
+                        <i class="bi bi-lightbulb h1 mb-4" id="bi-4"></i>
                         <h3 class="card-title mb-3" id="soft-skill-heading">Creativity</h3>
                         <p class="card-text" id="soft-skill-text">Thinking outside the box, generating innovative ideas,
                             and applying imaginative solutions to problems.</p>
@@ -363,7 +371,7 @@
             <div class="col-lg-4 mb-3">
                 <div class="card h-100 border-0 shadow">
                     <div class="card-body text-center" id="softskill-card">
-                        <i class="bi bi-people-fill h1 text-primary mb-4"></i>
+                        <i class="bi bi-people-fill h1 mb-4" id="bi-5"></i>
                         <h3 class="card-title mb-3" id="soft-skill-heading">Leadership</h3>
                         <p class="card-text" id="soft-skill-text">Ability to lead and inspire others, delegate tasks
                             effectively, and provide guidance towards achieving objectives.</p>
@@ -373,7 +381,7 @@
             <div class="col-lg-4 mb-3">
                 <div class="card h-100 border-0 shadow">
                     <div class="card-body text-center" id="softskill-card">
-                        <i class="bi bi-clipboard-data h1 text-primary mb-4"></i>
+                        <i class="bi bi-clipboard-data h1 mb-4" id="bi-6"></i>
                         <h3 class="card-title mb-3" id="soft-skill-heading">Time Management</h3>
                         <p class="card-text" id="soft-skill-text">Efficient organization of tasks and priorities,
                             ability to meet deadlines, and optimize productivity.</p>
@@ -383,7 +391,7 @@
             <div class="col-lg-4 mb-3">
                 <div class="card h-100 border-0 shadow">
                     <div class="card-body text-center" id="softskill-card">
-                        <i class="bi bi-arrow-clockwise h1 text-primary mb-4"></i>
+                        <i class="bi bi-arrow-clockwise h1 mb-4" id="bi-7"></i>
                         <h3 class="card-title mb-3" id="soft-skill-heading">Adaptability</h3>
                         <p class="card-text" id="soft-skill-text">Flexibility and willingness to adapt to changing
                             circumstances, environments, and requirements.</p>
