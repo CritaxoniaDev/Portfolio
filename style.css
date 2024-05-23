@@ -385,6 +385,18 @@ body {
     border-radius: 5px;
 }
 
+#project1ModalLabel,
+#project2ModalLabel,
+#project3ModalLabel,
+#project4ModalLabel,
+#project5ModalLabel {
+    font-family: "Radio Canada Big", sans-serif;   
+}
+
+.modaltext {
+    font-family: "Radio Canada Big", sans-serif; 
+}
+
 #proj-1-img, 
 #proj-2-img, 
 #proj-3-img, 
