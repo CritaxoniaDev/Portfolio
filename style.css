@@ -466,6 +466,12 @@ body {
     height: 175px;
 }
 
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
 .languages-used .badge {
     padding: 7px;
     background-color: rgb(19, 44, 49);
