@@ -36,137 +36,374 @@
 }
 
 body {
-    background-image: url(img/triangle.svg), url(img/hexagon.svg), url(img/square.svg), url(img/circle.svg);
-    background-size: 45% auto, 40% auto, 40% auto, 45% auto;
-    background-position: -25% 1%, 113% 2%, 65% 1%, 20% 2.5%;
     background-repeat: no-repeat;
-    background-color: rgb(19, 44, 49);
+    background: linear-gradient(to bottom,
+            #e6f2ff, #cce5ff, #b3d9ff, #99ccff, #80bfff,
+            #a16fd2, #7e49b4, #582a86, #301748, #1a0d27,
+            #170d22, #121212, #2d2d2d, #141414, #330033);
 }
 
 .navbar {
-    background-color: rgb(13, 33, 37);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.356);
-    /* Add shadow to the bottom of the navbar */
+    transition: background-color 0.3s ease;
 }
 
 .navbar-brand img {
     max-height: 40px;
-    /* Adjust the height of the image as needed */
 }
 
 .navbar-brand .header-name {
-    font-size: 1.5rem;
-    /* Adjust the font size of the header name */
+    font-size: 1.4rem;
     font-weight: bold;
-    /* Adjust the font weight as needed */
     margin-left: 30px;
-    /* Adjust the margin as needed */
     font-family: "Truculenta", sans-serif;
 }
 
 .navbar-nav li {
     margin-right: 40px;
-    /* Adjust the margin as needed */
     font-size: 18.5px;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Koulen", sans-serif;
 }
 
 .btn:hover {
     background-color: #5FFBF1;
 }
 
-.dropdown-item {
-    color: white;
-}
-
-.dropdown-item:hover {
-    color: #000000;
-    border-radius: 10px;
-}
-
-.dropdown-menu {
-    background-color: rgb(13, 33, 37);
-}
-
 .navbar-nav .nav-link {
+    position: relative;
     transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:not(.dropdown-toggle)::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: linear-gradient(to bottom right, #12fffb, #8f94fb);
+    transition: width 0.3s ease, right 0.3s ease;
+}
+
+.navbar-nav .nav-link:not(.dropdown-toggle):hover::after {
+    width: 100%;
+    right: 0;
 }
 
 .navbar-nav .nav-link:hover {
     background-image: none;
     color: transparent;
     -webkit-text-fill-color: transparent;
-    /* Safari support */
     background: linear-gradient(to bottom right, #12fffb, #8f94fb);
     -webkit-background-clip: text;
     background-clip: text;
 }
 
+/* Styles for the navbar when scrolled */
+.navbar-scrolled .nav-link:hover {
+    background: linear-gradient(to bottom right, #0ea6a0, #6d72d9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-scrolled .nav-link:not(.dropdown-toggle)::after {
+    background: linear-gradient(to bottom right, #0ea6a0, #6d72d9);
+}
+
 #home {
     background-image: url(img/llline.svg);
     background-size: 81% auto;
-    background-position: 49% -3%;
+    background-position: 53% -18%;
     background-repeat: no-repeat;
     padding-bottom: 100px;
-    padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
     margin-bottom: 30px;
-    margin-top: -30px;
+    padding-top: 100px;
+}
+
+.ui-btn {
+    --btn-default-bg: #1b0332;
+    --btn-padding: 15px 10px;
+    --btn-hover-bg: rgb(51, 51, 51);
+    --btn-transition: .3s;
+    --btn-letter-spacing: .1rem;
+    --btn-animation-duration: 1.2s;
+    --btn-shadow-color: rgba(0, 0, 0, 0.137);
+    --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+    --hover-btn-color: #7241FF;
+    --default-btn-color: #fff;
+    --font-size: 16px;
+    /* 👆 this field should not be empty */
+    --font-weight: 600;
+    font-family: "Radio Canada Big", sans-serif;
+    text-decoration: none;
+}
+/* button settings 👆 */
+
+.ui-btn {
+    box-sizing: border-box;
+    padding: var(--btn-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--default-btn-color);
+    background: var(--btn-default-bg);
+    cursor: pointer;
+    transition: var(--btn-transition);
+    overflow: hidden;
+    box-shadow: var(--btn-shadow);
+    border-radius: 30px;
+    border: 2px solid #2A2B3A;
+}
+
+.ui-btn span {
+    letter-spacing: var(--btn-letter-spacing);
+    transition: var(--btn-transition);
+    box-sizing: border-box;
+    position: relative;
+    background: inherit;
+}
+
+.ui-btn span::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+}
+
+.ui-btn:hover,
+.ui-btn:focus {
+    background: var(--btn-default-bg);
+    box-shadow: 0px 0px 10px 0px rgba(119, 68, 255, 0.70);
+    border: 2px solid #7241FF;
+    ;
+}
+
+.ui-btn:hover span,
+.ui-btn:focus span {
+    color: var(--hover-btn-color);
+}
+
+.ui-btn:hover span::before,
+.ui-btn:focus span::before {
+    animation: chitchat linear both var(--btn-animation-duration);
+}
+
+@keyframes chitchat {
+    0% {
+        content: "#";
+    }
+
+    5% {
+        content: ".";
+    }
+
+    10% {
+        content: "^{";
+    }
+
+    15% {
+        content: "-!";
+    }
+
+    20% {
+        content: "#$_";
+    }
+
+    25% {
+        content: "№:0";
+    }
+
+    30% {
+        content: "#{+.";
+    }
+
+    35% {
+        content: "@}-?";
+    }
+
+    40% {
+        content: "?{4@%";
+    }
+
+    45% {
+        content: "=.,^!";
+    }
+
+    50% {
+        content: "?2@%";
+    }
+
+    55% {
+        content: "\;1}]";
+    }
+
+    60% {
+        content: "?{%:%";
+        right: 0;
+    }
+
+    65% {
+        content: "|{f[4";
+        right: 0;
+    }
+
+    70% {
+        content: "{4%0%";
+        right: 0;
+    }
+
+    75% {
+        content: "'1_0<";
+        right: 0;
+    }
+
+    80% {
+        content: "{0%";
+        right: 0;
+    }
+
+    85% {
+        content: "]>'";
+        right: 0;
+    }
+
+    90% {
+        content: "4";
+        right: 0;
+    }
+
+    95% {
+        content: "2";
+        right: 0;
+    }
+
+    100% {
+        content: "";
+        right: 0;
+    }
+}
+
+.custom-btn {
+    background: linear-gradient(90deg, #ffa2a2, #ffcc99, #ffff99, #ccffcc, #ccffff, #ccccff, #ffccff);
+    border-color: #007bff;
+    color: rgb(0, 0, 0);
+    padding: 18px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    position: relative;
+    font-family: "Radio Canada Big", sans-serif;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.custom-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, #ffa2a2, #ffcc99, #ffff99, #ccffcc, #ccffff, #ccccff, #ffccff);
+    transition: left 0.5s;
+    z-index: -1;
+}
+
+.custom-btn:hover:before {
+    left: 0;
+}
+
+.custom-btn:hover {
+    background: transparent;
+    /* Ensure the background is transparent so the gradient shows */
+    border-color: transparent;
+    /* Ensure the border is transparent so the gradient shows */
+}
+
+.social-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    transition: background 0.3s ease-in, color 0.3s ease-in;
+}
+
+.social-icon:hover {
+    background: #333;
+    color: #fff;
+}
+
+.social-icon i {
+    line-height: inherit;
 }
 
 .welcome-header-h1 {
     font-size: 65px;
-    margin-left: 50px;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
+    font-weight: 700;
+    color: rgb(56, 34, 73);
     text-align: center;
     overflow: hidden;
-    border-right: 2px solid transparent;
     white-space: nowrap;
-    animation: typing 3s steps(50, end) infinite; 
-    font-family: "Freeman", sans-serif;
-
+    font-family: "Londrina Outline", sans-serif;
 }
 
-@keyframes typing {
-    from {
-      width: 0%; /* Start with no width */
+@keyframes skillAnimation {
+    0% {
+        content: "Front End Developer"; /* Unicode for a laptop icon */
+        color: #FF5733; /* Example color */
     }
-    to {
-      width: 91.5%; /* End with full width */
-    }
-  }
 
-  @keyframes skillAnimation {
-    0% { content: "Front End Developer"; }
-    45% { content: "Back End Developer"; }
-    65% { content: "UI/UX Designer"; }
-    95% { content: "Database Developer"; }
-}
+    45% {
+        content: "Back End Developer"; /* Unicode for a floppy disk icon */
+        color: #33A1FF; /* Example color */
+    }
+
+    65% {
+        content: "UI/UX Designer"; /* Unicode for a pen and ruler icon */
+        color: #FFC300; /* Example color */
+    }
+
+    95% {
+        content: "Database Developer"; /* Unicode for a chart increasing icon */
+        color: #8356ed; /* Example color */
+    }
+}   
 
 .welcome-header-h2-skills:after {
-    content: "Full Stack Developer"; /* Initial skill */
+    content:" ";
     display: inline-block;
-    animation: skillAnimation 6s infinite; /* Adjust animation duration as needed */
+    animation: skillAnimation 6s infinite;
+    /* Adjust animation duration as needed */
 }
 
 .welcome-header-h2-skills {
     padding-top: 19px;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 300;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
-    font-family: "Radio Canada Big", sans-serif;
+    font-family: "Signika", sans-serif;
+}
+
+#h2-skills {
+    font-family: "Signika", sans-serif;
+    margin-bottom: -17px;
 }
 
 .subheading {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 300;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     font-family: "Oswald", sans-serif;
-    margin-top: 30px;
+    margin-top: -5px;
 }
 
 .center-image {
@@ -183,8 +420,6 @@ body {
 #about-me {
     padding-bottom: 150px;
     padding-top: 130px;
-    padding-left: 100px;
-    padding-right: 100px;
     margin-bottom: 30px;
     margin-top: -30px;
 }
@@ -198,12 +433,12 @@ body {
 .about-me-section-h1 {
     font-size: 50px;
     font-family: "Roboto Condensed", sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .about-me-content {
     font-size: 20px;
-    padding: 20px;
+    padding: 25px;
     color: rgb(255, 255, 255);
 }
 
@@ -212,29 +447,23 @@ body {
     font-family: "Radio Canada Big", sans-serif;
 }
 
-.about-me-image img {
-    max-width: 100%;
-    height: 500px;
+.about-me-image {
+    width: 550px;
+    height: 550px;
     margin-top: 67px;
     border-radius: 10px;
 }
 
 .bubble-chat {
-    background-color: rgba(255, 255, 255, 0.2);
-    /* Slightly transparent white background */
-    backdrop-filter: blur(10px) saturate(150%);
-    /* Apply blur and saturation */
-    border-radius: 10px;
-    /* Rounded corners */
-    padding: 10px;
-    /* Add some padding */
+    border-radius: 56px;
+    background: #fffefe;
+    box-shadow: 34px 34px 68px #a1a1a1,
+        -34px -34px 68px #ffffff;
 }
 
 #education {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     padding-top: 130px;
-    padding-left: 100px;
-    padding-right: 100px;
     margin-bottom: 30px;
     margin-top: -30px;
 }
@@ -262,7 +491,7 @@ body {
 .section-heading {
     font-size: 50px;
     font-family: "Roboto Condensed", sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding-bottom: 20px;
 }
@@ -276,7 +505,9 @@ body {
     background-image: url(img/lithanimg.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     height: 300px;
+    width: 100%;
     /* Adjust the height as needed */
     object-fit: contain;
     /* Maintain aspect ratio */
@@ -285,8 +516,10 @@ body {
 .card-img-top-2 {
     background-image: url(img/fcpcimg.png);
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     height: 300px;
+    max-width: 100%;
     /* Adjust the height as needed */
     object-fit: contain;
     /* Maintain aspect ratio */
@@ -296,7 +529,9 @@ body {
     background-image: url(img/spnhsimg.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     height: 300px;
+    width: 100%;
     /* Adjust the height as needed */
     object-fit: contain;
     /* Maintain aspect ratio */
@@ -310,13 +545,41 @@ body {
     font-size: 20px;
 }
 
+#skill {
+    padding-top: 90px;
+}
+
 #skills {
     padding-bottom: 150px;
-    padding-top: 130px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-top: 30px;
     margin-bottom: 30px;
     margin-top: -30px;
+}
+
+.skills-nav-tabs .nav-link {
+    color: #555;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    border: none;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-family: "Radio Canada Big", sans-serif;
+    padding: 15px;
+    border-radius: 30px;
+}
+.skills-nav-tabs .nav-link:hover {
+    background: linear-gradient(135deg, #fda085 0%, #f6d365 100%);
+}
+.skills-nav-tabs .nav-link.active {
+    color: #fff;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+.skills-nav-tabs {
+    border-bottom: none;
+    padding-left: 30px;
+}
+.skills-nav-tabs .nav-item {
+    margin-bottom: -1px;
 }
 
 #skill-pic {
@@ -346,6 +609,7 @@ body {
 
 #softskill-card {
     margin-bottom: 10px;
+    padding: 2rem;
 }
 
 .module-text {
@@ -357,8 +621,76 @@ body {
     font-size: 19px;
 }
 
+.skill-wrapper img {
+    width: 100px;
+    /* Adjust as needed */
+    height: 100px;
+    /* Adjust as needed */
+}
+.skills-section {
+    padding: 20px;
+}
+
+.scroll-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.scroll-content {
+    display: flex;
+    width: 200%;
+    animation: scroll 20s linear infinite;
+}
+
+.skill-wrapper {
+    text-align: center;
+    padding: 10px;
+    width: 20%; 
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.skill-logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+.skill-wrapper {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    /* Adjust opacity as needed */
+    backdrop-filter: blur(10px);
+    /* Adjust blur amount as needed */
+    z-index: -1;
+}
+
+.skill-wrapper:hover {
+    transform: scale(1.1);
+}
+
 .bi {
-    font-size: 5rem; /* Adjust the size as needed */
+    font-size: 4rem;
+    /* Adjust the size as needed */
 }
 
 #bi-1 {
@@ -394,7 +726,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     background-color: rgb(19, 44, 49);
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -403,22 +735,21 @@ body {
     font-family: "Radio Canada Big", sans-serif;
 }
 
-.skill-wrapper {
-    background-color: #d4edda;
-    border-radius: 10px;
-}
-
 #img {
     padding-left: 70px;
 }
 
+.section-heading-h1 {
+    font-size: 50px;
+    font-family: "Roboto Condensed", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 #soft-skills {
-    padding-bottom: 150px;
-    padding-top: 70px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-bottom: 30px;
-    margin-top: -30px;
+    padding-bottom: 50px;
+    padding-top: 30px;
     font-size: 20px;
     text-align: justify;
 }
@@ -426,8 +757,6 @@ body {
 #projects {
     padding-bottom: 150px;
     padding-top: 130px;
-    padding-left: 100px;
-    padding-right: 100px;
     margin-bottom: 30px;
     margin-top: -30px;
 }
@@ -451,18 +780,18 @@ body {
 #project3ModalLabel,
 #project4ModalLabel,
 #project5ModalLabel {
-    font-family: "Radio Canada Big", sans-serif;   
+    font-family: "Radio Canada Big", sans-serif;
 }
 
 .modaltext {
-    font-family: "Radio Canada Big", sans-serif; 
+    font-family: "Radio Canada Big", sans-serif;
 }
 
-#proj-1-img, 
-#proj-2-img, 
-#proj-3-img, 
-#proj-4-img
-#proj-5-img{
+#proj-1-img,
+#proj-2-img,
+#proj-3-img,
+#proj-4-img,
+#proj-5-img {
     height: 175px;
 }
 
@@ -496,8 +825,8 @@ body {
 #contact-us {
     padding-bottom: 150px;
     padding-top: 130px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
     margin-bottom: 30px;
     margin-top: -30px;
 }
@@ -509,7 +838,8 @@ iframe {
 .map-container {
     position: relative;
     overflow: hidden;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide height by width) */
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide height by width) */
 }
 
 .map-container iframe {
@@ -578,22 +908,62 @@ footer {
 
     .subheading {
         padding-top: -20px;
-        font-size: 1rem; /* Adjust the font size as needed */
+        font-size: 1rem;
+        /* Adjust the font size as needed */
     }
 }
 
+@media (max-width: 768px) {
+    .about-me-section {
+        padding: 20px;
+        /* Add padding for better spacing on small screens */
+    }
+
+    .about-me-content {
+        text-align: justify;
+        /* Justify text alignment for better readability */
+    }
+
+    .bubble-chat p {
+        font-size: 14px;
+        /* Decrease font size for smaller screens */
+    }
+
+    .about-me-image {
+        text-align: center;
+        /* Center image on small screens */
+        margin-top: 20px;
+        /* Add margin for better spacing */
+    }
+
+}
 
 @media (max-width: 768px) {
-    .card-title {
-        font-size: 1.2rem; /* Adjust the font size as needed */
+    .education-section {
+        padding: 20px;
+        /* Add padding for better spacing on small screens */
+    }
+
+    .card-body {
+        text-align: justify;
+        /* Justify text alignment for better readability */
+    }
+
+    .card-body h2,
+    .card-body p {
+        font-size: 14px;
+        /* Decrease font size for smaller screens */
     }
 }
 
 @media (max-width: 768px) {
     #home {
-        background-position:  50% 8%; /* Adjust background position for mobile */
-        padding: 50px; /* Adjust padding for mobile */
-        margin: 0; /* Reset margin for mobile */
+        background-position: 50% 8%;
+        /* Adjust background position for mobile */
+        padding: 50px;
+        /* Adjust padding for mobile */
+        margin: 0;
+        /* Reset margin for mobile */
     }
 }
 
@@ -605,6 +975,7 @@ footer {
     #soft-skill-heading {
         font-size: 25px;
     }
+
     #soft-skill-text {
         font-size: 14px;
     }
@@ -612,40 +983,13 @@ footer {
 
 @media (max-width: 768px) {
     .card-title {
-        font-size: 1.2rem; /* Adjust the font size as needed */
+        font-size: 1.2rem;
+        /* Adjust the font size as needed */
     }
+
     #school-name {
         font-size: 1.8rem;
         text-align: left;
-    }
-}
-
-@media (max-width: 768px) {
-    .about-me-section {
-        padding: 20px; /* Add padding for better spacing on small screens */
-    }
-    .about-me-content {
-        text-align: justify; /* Justify text alignment for better readability */
-    }
-    .bubble-chat p {
-        font-size: 14px; /* Decrease font size for smaller screens */
-    }
-    .about-me-image {
-        text-align: center; /* Center image on small screens */
-        margin-top: 20px; /* Add margin for better spacing */
-    }
-}
-
-@media (max-width: 768px) {
-    .education-section {
-        padding: 20px; /* Add padding for better spacing on small screens */
-    }
-    .card-body {
-        text-align: justify; /* Justify text alignment for better readability */
-    }
-    .card-body h2,
-    .card-body p {
-        font-size: 14px; /* Decrease font size for smaller screens */
     }
 }
 
@@ -654,23 +998,34 @@ footer {
         font-size: 24px;
         text-align: left;
     }
+
     #project-text {
         font-size: 14px;
     }
+
     .projects-section {
-        padding: 20px; /* Add padding for better spacing on small screens */
+        padding: 20px;
+        /* Add padding for better spacing on small screens */
     }
+
     .card-body {
-        text-align: justify; /* Justify text alignment for better readability */
+        text-align: justify;
+        /* Justify text alignment for better readability */
     }
+
     .card-text {
-        font-size: 13px; /* Decrease font size for smaller screens */
+        font-size: 13px;
+        /* Decrease font size for smaller screens */
     }
+
     .card-img-top {
-        max-width: 100%; /* Ensure images are responsive */
+        max-width: 100%;
+        /* Ensure images are responsive */
     }
+
     .languages-used .badge {
-        margin-right: 5px; /* Add space between badges */
+        margin-right: 5px;
+        /* Add space between badges */
     }
 }
 
@@ -679,16 +1034,20 @@ footer {
         font-size: 30px;
         text-align: left;
     }
+
     #contact-number {
         font-size: 17px;
     }
+
     #contact-address {
         font-size: 16px;
         text-align: left;
     }
+
     .account-name {
         font-size: 12px;
     }
+
     #footer {
         font-size: 17px;
     }
