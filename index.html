@@ -4,9 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Logo Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
         rel="stylesheet">
@@ -16,26 +28,29 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
         rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- CSS File link -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Portfolio - Gian Raphael</title>
 </head>
 
 <body>
     <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <!-- Image on the left -->
             <a class="navbar-brand" href="#home">
-                <span class="header-name">Gian Alcantara</span>
+                <div class="header-name">Gian Alcantara</div>
             </a>
             <!-- Toggle button for mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -51,15 +66,8 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-cogs"></i> Skills
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#skills">Technical Skills</a></li>
-                            <li><a class="dropdown-item" href="#soft-skills">Soft Skills</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#skill"><i class="fas fa-code"></i> Skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#projects"><i class="fas fa-code"></i> Projects</a>
@@ -67,42 +75,56 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="#contact-us"><i class="fas fa-envelope"></i> Contact</a>
                     </li>
-                    <li class="nav-item p-1">
-                        <a class="btn btn-outline-light" href="path_to_resume.pdf" download><i class="fas fa-video"></i> Video Introduction</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!--Home Section-->
-    <section class="container" id="home">
+    <section class="container" id="home" data-bg-color="#e6f2ff">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="welcome-header-h2-skills text-center"></h2>
-                <h1 class="welcome-header-h1 text-center"><span>I'm Gian Raphael Delos Reyes Alcantara</span></h1>
-                <h2 class="subheading text-center">Bachelor of Science in Information Technology Specialization in
-                    Software
-                    Engineering</h2>
+                <h2 class="subheading text-center">Hello!</h2>
+                <h1 class="welcome-header-h1 text-center"><span id="typed-output"></span></h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <img src="img/codergif.gif" alt="Welcome Image" class="center-image img-fluid d-block mx-auto">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-end">
+                <h2 class="text-center" id="h2-skills">I'm a</h2>
+                <h2 class="welcome-header-h2-skills text-center"></h2>
+                <div class="mb-3 text-center">
+                    <a href="https://github.com/yourprofile" class="social-icon m-2" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://facebook.com/yourprofile" class="social-icon m-2" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://linkedin.com/in/yourprofile" class="social-icon m-2" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+                <div>
+                    <a href="/path/to/resume.pdf" class="ui-btn mt-4" download>
+                        <span>Resume</span>
+                    </a>
+                    <a href="/path/to/video.mp4" class="ui-btn m-2">
+                        <span>Video Introduction</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-md-start">
+                <img src="img/yorforgerrr.jpg" alt="Welcome Image" id="about-us-pic"
+                    class="center-image img-fluid rounded-circle d-block mx-auto">
             </div>
         </div>
     </section>
-    <!-- About Me Section -->
-    <section class="container about-me-section py-5" id="about-me">
+    <!--About-Me Section-->
+    <section class="container about-me-section py-5" id="about-me" data-bg-color="#d1e7dd">
         <div class="row align-items-center">
             <div class="col-md-6 mb-4 mb-md-0 about-me-content animate-left">
                 <h2 class="about-me-section-h1 animate-left text-center mb-4">About Me</h2>
-                <div class="bubble-chat animate-left p-4 shadow-sm rounded bg-light">
+                <div class="bubble-chat animate-left p-4">
                     <p class="aboutme-text">
                         My Name is Gian Raphael Alcantara. A dedicated student enrolled in the software
                         engineering course at First City Providential
                         College, my mission revolves around mastering the intricacies of programming languages,
-                        algorithms,
-                        and
+                        algorithms, and
                         software development methodologies. Fueled by a relentless passion for technology and
                         innovation, I aspire to become a proficient software engineer capable of tackling complex
                         problems and contributing to groundbreaking projects. My vision extends beyond mere academic
@@ -112,20 +134,20 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md-6 text-center animate-left">
-                <img src="img/pic.jpg" alt="About Me Image" class="img-fluid rounded-circle shadow">
+            <div class="col-md-6 text-center">
+                <img src="img/pic.jpg" alt="About Me Image" class="img-fluid rounded-circle shadow about-me-image">
             </div>
         </div>
     </section>
     <!--Education Section-->
-    <section class="container education-section" id="education">
-        <h2 class="section-heading animate-left">Educational Background</h2>
-        <div class="row animate-left" id="education-content">
-            <div class="col-12 animate-left">
+    <section class="container education-section" id="education" data-bg-color="#f8d7da">
+        <h2 class="section-heading">Educational Background</h2>
+        <div class="row" id="education-content">
+            <div class="col-12">
                 <div class="card mb-5 p-3" id="card-education">
                     <img src="img/lithan.png" class="card-img-top-1 img-fluid" alt="School 1 Logo">
                     <hr>
-                    <div class="card-body animate-left">
+                    <div class="card-body">
                         <h5 class="card-title" id="school-name">Lithan Educlaas</h5>
                         <h6 class="card-text address">Eunos Road 8 #07-02 Lifelong Learning Institute Singapore 408601
                         </h6>
@@ -135,18 +157,20 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 animate-left">
+            <div class="col-12">
                 <div class="card mb-5 p-3" id="card-education">
                     <img src="img/fcpc.png" class="card-img-top-2 img-fluid" alt="School 2 Logo">
                     <hr>
                     <div class="card-body">
                         <h5 class="card-title animate-left" id="school-name">First City Providential College</h5>
-                        <h6 class="card-text address">Blk 7 Phase F Francisco Homes, Narra, San Jose del Monte City, 3023
+                        <h6 class="card-text address">Blk 7 Phase F Francisco Homes, Narra, San Jose del Monte City,
+                            3023
                             Bulacan
                         </h6>
                         <br>
                         <h2 class="card-text" id="degree">Bachelors Degree</h2>
-                        <p class="card-text grade">Bachelor of Science in Information Technology Specialization in Software
+                        <p class="card-text grade">Bachelor of Science in Information Technology Specialization in
+                            Software
                             Engineering - 1st Year <br>2023 - Present</p>
                     </div>
                 </div>
@@ -162,247 +186,341 @@
                         <br>
                         <h2 class="card-text" id="degree">Senior High School</h2>
                         <p class="card-text animate-left grade">Grade - 11 (General Academic Strand)<br> 2021 - 2022</p>
-                        <p class="card-text animate-left grade">Grade - 12 (General Academic Strand)<br> 2021 - 2022 <br> With
-                            Honors</p>
+                        <p class="card-text animate-left grade">Grade - 12 (General Academic Strand)<br> 2021 - 2022
+                            <br> With
+                            Honors
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!--Skills Section-->
-    <section class="container skills-section" id="skills">
-        <h2 class="section-heading text-center">Skills</h2>
-        <div class="row">
-            <!-- Front End Skills -->
-            <div class="col-lg-12">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h3 class="card-title text-center" id="skill-heading">
-                            <i class="bi bi-code-slash" id="bi-fed"></i> Front End Development
-                        </h3>
-                        <hr>
-                        <div class="row justify-content-center">
-                            <div class="col-md-3 text-center">
-                                <div class="skill-wrapper">
-                                    <img src="img/htmlimg.png" id="skill-pic" alt="HTML Logo"
-                                        class="skill-logo img-fluid">
-                                    <p>HTML</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 text-center">
-                                <div class="skill-wrapper">
-                                    <img src="img/cssimg.png" id="skill-pic" alt="CSS Logo"
-                                        class="skill-logo img-fluid">
-                                    <p>CSS</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 text-center">
-                                <div class="skill-wrapper">
-                                    <img src="img/bootstrapimg.png" id="skill-pic" alt="Bootstrap Logo"
-                                        class="skill-logo img-fluid">
-                                    <p>Bootstrap</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 text-center">
-                                <div class="skill-wrapper">
-                                    <img src="img/jsimg.png" id="skill-pic" alt="Javascript Logo"
-                                        class="skill-logo img-fluid">
-                                    <p>JavaScript</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 text-center">
-                                <div class="skill-wrapper">
-                                    <img src="img/jqueryimg.png" id="skill-pic" alt="JQuery Logo"
-                                        class="skill-logo img-fluid">
-                                    <p>JQuery</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Back End Skills -->
-            <div class="col-lg-12">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h3 class="card-title text-center" id="skill-heading"><i class="bi bi-server" id="bi-bed"></i>
-                            Back End
-                            Development</h3>
-                        <hr>
-                        <div class="row justify-content-center">
-                            <div class="col-md-3 text-center">
-                                <div class="skill-wrapper">
-                                    <img src="img/javaimg.png" id="skill-pic" alt="Java Logo"
-                                        class="skill-logo img-fluid">
-                                    <p>Java</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 text-center">
-                                <div class="skill-wrapper">
-                                    
-                                    <img src="img/springbootimg.png" id="skill-pic" alt="Spring Boot Logo"
-                                        class="skill-logo img-fluid">
-                                    
-                                    <p>Spring Boot</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 text-center">
-                                <div class="skill-wrapper">
-                                    <img src="img/mysqlimg.png" id="skill-pic" alt="MySQL Logo"
-                                        class="skill-logo img-fluid">
-                                    <p>MySQL</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 text-center">
-                                <div class="skill-wrapper" id="spring-mvc">
-                                    <img src="img/springmvc.png" id="skill-pic" alt="MySQL Logo"
-                                        class="skill-logo img-fluid">
-                                    <p>Spring MVC</p>
+    <div class="container my-5">
+        <h2 class="section-heading-h1 text-center" id="skill" data-bg-color="#fff3cd">Skills</h2>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs skills-nav-tabs" id="skillsTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="technical-skills-tab" data-bs-toggle="tab"
+                    data-bs-target="#technical-skills" type="button" role="tab" aria-controls="technical-skills"
+                    aria-selected="true">Technical Skills</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="soft-skills-tab" data-bs-toggle="tab" data-bs-target="#soft-skills"
+                    type="button" role="tab" aria-controls="soft-skills" aria-selected="false">Soft Skills</button>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content mt-4">
+            <!-- Technical Skills -->
+            <div class="tab-pane fade show active" id="technical-skills" role="tabpanel"
+                aria-labelledby="technical-skills-tab">
+                <section class="skills-section" id="skills" data-bg-color="#fff3cd">
+                    <h2 class="section-heading-h1 text-center">Technical Skills</h2>
+                    <div class="row">
+                        <!-- Front End Skills -->
+                        <div class="col-lg-12">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center" id="skill-heading">
+                                        <i class="bi bi-code-slash" id="bi-fed"></i> Front End Development
+                                    </h3>
+                                    <hr>
+                                    <div class="scroll-container">
+                                        <div class="scroll-content">
+                                            <div class="skill-wrapper">
+                                                <img src="img/htmlimg.png" alt="HTML Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>HTML</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/cssimg.png" alt="CSS Logo" class="skill-logo img-fluid">
+                                                <p>CSS</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/bootstrapimg.png" alt="Bootstrap Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>Bootstrap</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/jsimg.png" alt="Javascript Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>JavaScript</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/jqueryimg.png" alt="JQuery Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>JQuery</p>
+                                            </div>
+                                            <!-- Repeat the content to create the infinite effect -->
+                                            <div class="skill-wrapper">
+                                                <img src="img/htmlimg.png" alt="HTML Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>HTML</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/cssimg.png" alt="CSS Logo" class="skill-logo img-fluid">
+                                                <p>CSS</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/bootstrapimg.png" alt="Bootstrap Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>Bootstrap</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/jsimg.png" alt="Javascript Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>JavaScript</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/jqueryimg.png" alt="JQuery Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>JQuery</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                        <!-- Back End Skills -->
+                        <div class="col-lg-12">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center" id="skill-heading">
+                                        <i class="bi bi-server" id="bi-bed"></i> Back End Development
+                                    </h3>
+                                    <hr>
+                                    <div class="scroll-container">
+                                        <div class="scroll-content">
+                                            <div class="skill-wrapper">
+                                                <img src="img/javaimg.png" alt="Java Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>Java</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/springbootimg.png" alt="Spring Boot Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>Spring Boot</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/mysqlimg.png" alt="MySQL Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>MySQL</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/springmvc.png" alt="Spring MVC Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>Spring MVC</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/liferay.png" alt="Liferay Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>Liferay</p>
+                                            </div>
+                                            <!-- Repeat the content to create the infinite effect -->
+                                            <div class="skill-wrapper">
+                                                <img src="img/javaimg.png" alt="Java Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>Java</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/springbootimg.png" alt="Spring Boot Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>Spring Boot</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/mysqlimg.png" alt="MySQL Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>MySQL</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/springmvc.png" alt="Spring MVC Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>Spring MVC</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/liferay.png" alt="Liferay Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>Liferay</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-            <!-- Prototyping Skills -->
-            <div class="col-lg-12">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h3 class="card-title text-center" id="skill-heading"> <i class="bi bi-brush" id="bi-ui"></i>
-                            User
-                            Interface/User Experience Design</h3>
-                        <hr>
-                        <div class="row justify-content-center">
-                            <div class="col-md-3 text-center">
-                                <div class="skill-wrapper">
-                                    <br>
-                                    <img src="img/axureimg.png" id="skill-pic" alt="HTML Logo"
-                                        class="skill-logo img-fluid">
-                                    <p>Axure RP</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 text-center">
-                                <div class="skill-wrapper">
-                                    <img src="img/figmaimg.png" id="skill-pic" alt="CSS Logo"
-                                        class="skill-logo img-fluid">
-                                    <br><br>
-                                    <p>Figma</p>
-                                </div>
-                            </div>
-                            <!-- Add prototyping skills as needed -->
-                        </div>
-                    </div>
-                </div>
-                <!-- Server Runtime Skills -->
-                <div class="col-lg-12">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title text-center" id="skill-heading"><i class="bi bi-hdd-stack"
-                                    id="bi-webhost"></i> Website
-                                Hosting</h3>
-                            <hr>
-                            <div class="row justify-content-center">
-                                <div class="col-md-3 text-center">
-                                    <div class="skill-wrapper">
-                                        <img src="img/apacheimg.png" id="skill-pic" alt="Apache Logo"
-                                            class="skill-logo img-fluid">
-                                        <p>Apache</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 text-center">
-                                    <div class="skill-wrapper">
-                                        <img src="img/tomcatpng.png" id="skill-pic" alt="Tomcat Logo"
-                                            class="skill-logo img-fluid">
-                                        <p>Tomcat</p>
+                        <!-- Prototyping Skills -->
+                        <div class="col-lg-12">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center" id="skill-heading">
+                                        <i class="bi bi-brush" id="bi-ui"></i> User Interface/User Experience Design
+                                    </h3>
+                                    <hr>
+                                    <div class="scroll-container">
+                                        <div class="scroll-content">
+                                            <div class="skill-wrapper">
+                                                <br>
+                                                <img src="img/axureimg.png" alt="Axure RP Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>Axure RP</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/figmaimg.png" alt="Figma Logo"
+                                                    class="skill-logo img-fluid">
+                                                <br><br>
+                                                <p>Figma</p>
+                                            </div>
+                                            <!-- Repeat the content to create the infinite effect -->
+                                            <div class="skill-wrapper">
+                                                <br>
+                                                <img src="img/axureimg.png" alt="Axure RP Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>Axure RP</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/figmaimg.png" alt="Figma Logo"
+                                                    class="skill-logo img-fluid">
+                                                <br><br>
+                                                <p>Figma</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Server Runtime Skills -->
+                        <div class="col-lg-12">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center" id="skill-heading">
+                                        <i class="bi bi-hdd-stack" id="bi-webhost"></i> Website Hosting
+                                    </h3>
+                                    <hr>
+                                    <div class="scroll-container">
+                                        <div class="scroll-content">
+                                            <div class="skill-wrapper">
+                                                <img src="img/apacheimg.png" alt="Apache Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>Apache</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/tomcatpng.png" alt="Tomcat Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>Tomcat</p>
+                                            </div>
+                                            <!-- Repeat the content to create the infinite effect -->
+                                            <div class="skill-wrapper">
+                                                <img src="img/apacheimg.png" alt="Apache Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>Apache</p>
+                                            </div>
+                                            <div class="skill-wrapper">
+                                                <img src="img/tomcatpng.png" alt="Tomcat Logo"
+                                                    class="skill-logo img-fluid">
+                                                <p>Tomcat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
             </div>
-    </section>
-    <!--Soft Skills Section-->
-    <section class="container-soft-skills-section" id="soft-skills">
-        <h2 class="section-heading text-center mb-5">Soft Skills</h2>
-        <div class="row justify-content-center align-items-stretch">
-            <!-- Soft Skills Cards -->
-            <div class="col-lg-4 mb-3">
-                <div class="card h-100 border-0 shadow">
-                    <div class="card-body text-center" id="softskill-card">
-                        <i class="bi bi-chat-square-quote h1 mb-4" id="bi-1"></i>
-                        <h3 class="card-title mb-3" id="soft-skill-heading">Communication</h3>
-                        <p class="card-text" id="soft-skill-text">Effective verbal and written communication abilities,
-                            including active listening and clear articulation of ideas.</p>
+            <!--Soft Skills Section-->
+            <div class="tab-pane fade" id="soft-skills" role="tabpanel" aria-labelledby="soft-skills-tab">
+                <section class="container-soft-skills-section" id="soft-skills" data-bg-color="#e2e3e5">
+                    <h2 class="section-heading-h1 text-center">Soft Skills</h2>
+                    <div class="row justify-content-center">
+                        <!-- Soft Skills Cards -->
+                        <div class="col-lg-4 mb-4">
+                            <div class="card h-100 border-0 shadow">
+                                <div class="card-body text-center" id="softskill-card">
+                                    <i class="bi bi-chat-square-quote h1 mb-4" id="bi-1"></i>
+                                    <h3 class="card-title mb-3" id="soft-skill-heading">Communication</h3>
+                                    <p class="card-text" id="soft-skill-text">Effective verbal and written communication
+                                        abilities,
+                                        including active listening and clear articulation of ideas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3">
+                            <div class="card h-100 border-0 shadow">
+                                <div class="card-body text-center" id="softskill-card">
+                                    <i class="bi bi-people h1 mb-4" id="bi-2"></i>
+                                    <h3 class="card-title mb-3" id="soft-skill-heading">Teamwork</h3>
+                                    <p class="card-text" id="soft-skill-text">Collaborative approach to work, ability to
+                                        work
+                                        effectively in a team environment, and contribute positively towards team goals.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3">
+                            <div class="card h-100 border-0 shadow">
+                                <div class="card-body text-center" id="softskill-card">
+                                    <i class="bi bi-puzzle h1 mb-4" id="bi-3"></i>
+                                    <h3 class="card-title mb-3" id="soft-skill-heading">Problem-solving</h3>
+                                    <p class="card-text" id="soft-skill-text">Analytical thinking, creativity, and
+                                        resourcefulness
+                                        in identifying and resolving challenges.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3">
+                            <div class="card h-100 border-0 shadow">
+                                <div class="card-body text-center" id="softskill-card">
+                                    <i class="bi bi-lightbulb h1 mb-4" id="bi-4"></i>
+                                    <h3 class="card-title mb-3" id="soft-skill-heading">Creativity</h3>
+                                    <p class="card-text" id="soft-skill-text">Thinking outside the box, generating
+                                        innovative ideas,
+                                        and applying imaginative solutions to problems.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3">
+                            <div class="card h-100 border-0 shadow">
+                                <div class="card-body text-center" id="softskill-card">
+                                    <i class="bi bi-people-fill h1 mb-4" id="bi-5"></i>
+                                    <h3 class="card-title mb-3" id="soft-skill-heading">Leadership</h3>
+                                    <p class="card-text" id="soft-skill-text">Ability to lead and inspire others,
+                                        delegate tasks
+                                        effectively, and provide guidance towards achieving objectives.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3">
+                            <div class="card h-100 border-0 shadow">
+                                <div class="card-body text-center" id="softskill-card">
+                                    <i class="bi bi-clipboard-data h1 mb-4" id="bi-6"></i>
+                                    <h3 class="card-title mb-3" id="soft-skill-heading">Time Management</h3>
+                                    <p class="card-text" id="soft-skill-text">Efficient organization of tasks and
+                                        priorities,
+                                        ability to meet deadlines, and optimize productivity.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3">
+                            <div class="card h-100 border-0 shadow">
+                                <div class="card-body text-center" id="softskill-card">
+                                    <i class="bi bi-arrow-clockwise h1 mb-4" id="bi-7"></i>
+                                    <h3 class="card-title mb-3" id="soft-skill-heading">Adaptability</h3>
+                                    <p class="card-text" id="soft-skill-text">Flexibility and willingness to adapt to
+                                        changing
+                                        circumstances, environments, and requirements.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-3">
-                <div class="card h-100 border-0 shadow">
-                    <div class="card-body text-center" id="softskill-card">
-                        <i class="bi bi-people h1 mb-4" id="bi-2"></i>
-                        <h3 class="card-title mb-3" id="soft-skill-heading">Teamwork</h3>
-                        <p class="card-text" id="soft-skill-text">Collaborative approach to work, ability to work
-                            effectively in a team environment, and contribute positively towards team goals.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-3">
-                <div class="card h-100 border-0 shadow">
-                    <div class="card-body text-center" id="softskill-card">
-                        <i class="bi bi-puzzle h1 mb-4" id="bi-3"></i>
-                        <h3 class="card-title mb-3" id="soft-skill-heading">Problem-solving</h3>
-                        <p class="card-text" id="soft-skill-text">Analytical thinking, creativity, and resourcefulness
-                            in identifying and resolving challenges.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-3">
-                <div class="card h-100 border-0 shadow">
-                    <div class="card-body text-center" id="softskill-card">
-                        <i class="bi bi-lightbulb h1 mb-4" id="bi-4"></i>
-                        <h3 class="card-title mb-3" id="soft-skill-heading">Creativity</h3>
-                        <p class="card-text" id="soft-skill-text">Thinking outside the box, generating innovative ideas,
-                            and applying imaginative solutions to problems.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-3">
-                <div class="card h-100 border-0 shadow">
-                    <div class="card-body text-center" id="softskill-card">
-                        <i class="bi bi-people-fill h1 mb-4" id="bi-5"></i>
-                        <h3 class="card-title mb-3" id="soft-skill-heading">Leadership</h3>
-                        <p class="card-text" id="soft-skill-text">Ability to lead and inspire others, delegate tasks
-                            effectively, and provide guidance towards achieving objectives.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-3">
-                <div class="card h-100 border-0 shadow">
-                    <div class="card-body text-center" id="softskill-card">
-                        <i class="bi bi-clipboard-data h1 mb-4" id="bi-6"></i>
-                        <h3 class="card-title mb-3" id="soft-skill-heading">Time Management</h3>
-                        <p class="card-text" id="soft-skill-text">Efficient organization of tasks and priorities,
-                            ability to meet deadlines, and optimize productivity.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-3">
-                <div class="card h-100 border-0 shadow">
-                    <div class="card-body text-center" id="softskill-card">
-                        <i class="bi bi-arrow-clockwise h1 mb-4" id="bi-7"></i>
-                        <h3 class="card-title mb-3" id="soft-skill-heading">Adaptability</h3>
-                        <p class="card-text" id="soft-skill-text">Flexibility and willingness to adapt to changing
-                            circumstances, environments, and requirements.</p>
-                    </div>
-                </div>
+                </section>
             </div>
         </div>
-    </section>
+    </div>
     <!--Projects Section-->
-    <section class="container projects-section" id="projects">
-        <h2 class="section-heading text-center">Projects</h2>
+    <section class="container projects-section" id="projects" data-bg-color="#d4edda">
+        <h2 class="section-heading-h1 text-center">Projects</h2>
         <div class="row justify-content-center">
             <!-- Project 1 -->
             <div class="col-md-4">
@@ -415,13 +533,15 @@
                             <span class="badge badge-primary">Java</span>
                         </div>
                         <br>
-                        <p class="card-text" id="project-text">North Sussex Judo seeks a user-friendly program to
+                        <p class="card-text" id="project-text">North Sussex Judo seeks a user-friendly program
+                            to
                             swiftly compute the
-                            monthly training fees for their athletes. This program simplifies fee calculations, ensuring
+                            monthly training fees for their athletes. This program simplifies fee calculations,
+                            ensuring
                             accuracy
                             and ease in managing athletes' financial commitments.</p>
                         <div class="project-button">
-                            <a href="#" id="project-button-1" class="btn btn-primary" data-bs-toggle="modal"
+                            <a href="#" id="project-button-1" class="btn custom-btn" data-bs-toggle="modal"
                                 data-bs-target="#project1Modal">View Project Information</a>
                         </div>
                     </div>
@@ -433,7 +553,8 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="project1ModalLabel">North Sussex Judo - Programming Foundations
+                            <h5 class="modal-title" id="project1ModalLabel">North Sussex Judo - Programming
+                                Foundations
                             </h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
@@ -462,9 +583,12 @@
                                 </a>
                             </div>
                             <p class="mt-3 modaltext" id="modal-text">The objective of the project is to build a
-                                software program that is using a Java language, and can calculate the monthly expenses
-                                of the judo athletes like the training plans, competition entries, and private coaching
-                                hours and the program should provide a simple interface that allows the athletes to
+                                software program that is using a Java language, and can calculate the monthly
+                                expenses
+                                of the judo athletes like the training plans, competition entries, and private
+                                coaching
+                                hours and the program should provide a simple interface that allows the athletes
+                                to
                                 enter their name, plan, weight, weight category, etc.
                             </p>
                             <a href="https://github.com/username/north-sussex-judo" class="btn btn-primary"
@@ -488,12 +612,13 @@
                             <span class="badge badge-primary">Bootstrap</span>
                         </div>
                         <br>
-                        <p class="card-text" id="project-text">DoBu Martial Arts is a martial arts gym. The gym offers
+                        <p class="card-text" id="project-text">DoBu Martial Arts is a martial arts gym. The gym
+                            offers
                             classes in a number of different
                             martial arts, as well as fitness training and self-defence courses.</p>
                         <br><br>
                         <div class="project-button">
-                            <a href="#" id="project-button-2" class="btn btn-primary" data-bs-toggle="modal"
+                            <a href="#" id="project-button-2" class="btn custom-btn" data-bs-toggle="modal"
                                 data-bs-target="#project2Modal">View Project Information</a>
                         </div>
                     </div>
@@ -533,13 +658,18 @@
                                     <span class="visually-hidden">Next</span>
                                 </a>
                             </div>
-                            <p class="mt-3 modaltext">As a Junior Web Developer at WebSpace, I need to design and create
-                                a website for DoBu Martial Arts, I will consider factors such as the type of business,
+                            <p class="mt-3 modaltext">As a Junior Web Developer at WebSpace, I need to design
+                                and create
+                                a website for DoBu Martial Arts, I will consider factors such as the type of
+                                business,
                                 industry, and target demographics, available budget, and the short and long-term
-                                objectives of the client company. Our goal is to build an engaging and an innovative
+                                objectives of the client company. Our goal is to build an engaging and an
+                                innovative
                                 website that effectively showcases the gym offerings including the judo, karate,
-                                jiu-jitsu, etc. and aligns with their branding, also to promote the different martial
-                                arts that they teach, their classes and prices, and to create their own account to
+                                jiu-jitsu, etc. and aligns with their branding, also to promote the different
+                                martial
+                                arts that they teach, their classes and prices, and to create their own account
+                                to
                                 manage their membership, and we will prioritize accessibility features to ensure
                                 inclusivity and usability for all users.
                             </p>
@@ -561,12 +691,13 @@
                             <span class="badge badge-primary">Axure RP 10</span>
                         </div>
                         <br>
-                        <p class="card-text" id="project-text">Boutiqa, a marketplace for sellers to promote their
+                        <p class="card-text" id="project-text">Boutiqa, a marketplace for sellers to promote
+                            their
                             products and for consumers to purchase with ease. The company
                             wants to have a consumer-centric application with an enhanced user experience.</p>
                         <br>
                         <div class="project-button">
-                            <a href="#" id="project-button-3" class="btn btn-primary" data-bs-toggle="modal"
+                            <a href="#" id="project-button-3" class="btn custom-btn" data-bs-toggle="modal"
                                 data-bs-target="#project3Modal">View Project Information</a>
                         </div>
                     </div>
@@ -578,7 +709,8 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="project3ModalLabel">Boutiqa E-Commerce - UI Frameworks</h5>
+                            <h5 class="modal-title" id="project3ModalLabel">Boutiqa E-Commerce - UI Frameworks
+                            </h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -605,14 +737,21 @@
                                     <span class="visually-hidden">Next</span>
                                 </a>
                             </div>
-                            <p class="mt-3 modaltext">As a UI/UX Designer at the company named Brightica Design Agency,
-                                where I can design client-centric products, I have been assigned by my manager named Mr.
-                                Andrew with the development of a prototype design for a Rich Internet Application (RIA)
-                                for Boutiqa, is a marketplace that is designed to facilitate the promotion of the
-                                products by sellers and also to ease of purchase of the buyers/consumers, and the aim of
+                            <p class="mt-3 modaltext">As a UI/UX Designer at the company named Brightica Design
+                                Agency,
+                                where I can design client-centric products, I have been assigned by my manager
+                                named Mr.
+                                Andrew with the development of a prototype design for a Rich Internet
+                                Application (RIA)
+                                for Boutiqa, is a marketplace that is designed to facilitate the promotion of
+                                the
+                                products by sellers and also to ease of purchase of the buyers/consumers, and
+                                the aim of
                                 the project is to create a consumer-centric application that can enhance the
-                                user-experience. The Primary objective of this project is to develop a prototype that is
-                                a Rich Internet Application (RIA) for Boutiqa, is a marketplace that is designed to
+                                user-experience. The Primary objective of this project is to develop a prototype
+                                that is
+                                a Rich Internet Application (RIA) for Boutiqa, is a marketplace that is designed
+                                to
                                 facilitate the
                                 promotion of products of sellers and with the ease of purchasing product by the
                                 buyer/consumers. And the main goal of this prototype application is to provide a
@@ -638,12 +777,13 @@
                             <span class="badge badge-primary">JavaScript</span>
                             <span class="badge badge-primary">MySQL</span>
                             <span class="badge badge-primary">Java (Spring Framework)</span>
-                        </div><br>
-                        <p class="card-text" id="project-text">Enomy-Finances operates within the financial sector,
+                        </div><br><br>
+                        <p class="card-text" id="project-text">Enomy-Finances operates within the financial
+                            sector,
                             specifically focusing on personal finance services. This sector
-                            is a critical component of the broader financial services industry.</p>
+                            is a critical component of the broader financial services industry.</p><br>
                         <div class="project-button">
-                            <a href="#" id="project-button-4" class="btn btn-primary" data-bs-toggle="modal"
+                            <a href="#" id="project-button-4" class="btn custom-btn" data-bs-toggle="modal"
                                 data-bs-target="#project4Modal">View Project Information</a>
                         </div>
                     </div>
@@ -655,7 +795,8 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="project4ModalLabel">Enomy Finances - Web Developemnt Foundations
+                            <h5 class="modal-title" id="project4ModalLabel">Enomy Finances - Web Developemnt
+                                Foundations
                             </h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
@@ -683,12 +824,18 @@
                                     <span class="visually-hidden">Next</span>
                                 </a>
                             </div>
-                            <p class="mt-3 modaltext">Enomy-Finances is initiating a project with PDS to design and
-                                implement a new computer system. This system will serve both staff and clients and will
-                                be deployed on upgraded infrastructure. Before starting the project, a preliminary
-                                software investigation will be conducted to understand requirements and scope. This
-                                includes identifying suitable software methodology and project constraints, defining
-                                core system processes, and generating simple software designs for client presentation.
+                            <p class="mt-3 modaltext">Enomy-Finances is initiating a project with PDS to design
+                                and
+                                implement a new computer system. This system will serve both staff and clients
+                                and will
+                                be deployed on upgraded infrastructure. Before starting the project, a
+                                preliminary
+                                software investigation will be conducted to understand requirements and scope.
+                                This
+                                includes identifying suitable software methodology and project constraints,
+                                defining
+                                core system processes, and generating simple software designs for client
+                                presentation.
                             </p>
                             <a href="https://github.com/username/enomy-finances" class="btn btn-primary"
                                 target="_blank">View on GitHub Repository</a>
@@ -711,12 +858,14 @@
                             <span class="badge badge-primary">Java (Spring Framework)</span>
                             <span class="badge badge-primary">Spring Boot</span>
                         </div><br>
-                        <p class="card-text" id="project-text">The project involves developing a Used Car Sales portal
+                        <p class="card-text" id="project-text">The project involves developing a Used Car Sales
+                            portal
                             with two user types, Users and Administrators,
-                            where Users can register, login, post cars for sale, update profiles, book test drives, and
+                            where Users can register, login, post cars for sale, update profiles, book test
+                            drives, and
                             post bidding prices.</p>
                         <div class="project-button">
-                            <a href="#" id="project-button-5" class="btn btn-primary" data-bs-toggle="modal"
+                            <a href="#" id="project-button-5" class="btn custom-btn" data-bs-toggle="modal"
                                 data-bs-target="#project5Modal">View Project Information</a>
                         </div>
                     </div>
@@ -728,7 +877,8 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="project5ModalLabel">ABC Cars Portal - Application Development
+                            <h5 class="modal-title" id="project5ModalLabel">ABC Cars Portal - Application
+                                Development
                                 and Processes</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
@@ -756,16 +906,24 @@
                                     <span class="visually-hidden">Next</span>
                                 </a>
                             </div>
-                            <p class="mt-3 modaltext">The project objective for the Used Car Sales portal developed by
-                                ‘ABC Cars Pte Ltd’ is to create a comprehensive online platform that facilitates the
-                                buying and selling of used cars. This platform is designed to cater to the needs of two
-                                types of users: general users and administrators, each with distinct functionalities and
-                                roles within the system. The objective encompasses developing a user-friendly interface
-                                that allows users to register, log in, post Cars for sale with pictures, deactivate
-                                existing car sales, update their profiles, book appointments for test drives, and place
+                            <p class="mt-3 modaltext">The project objective for the Used Car Sales portal
+                                developed by
+                                ‘ABC Cars Pte Ltd’ is to create a comprehensive online platform that facilitates
+                                the
+                                buying and selling of used cars. This platform is designed to cater to the needs
+                                of two
+                                types of users: general users and administrators, each with distinct
+                                functionalities and
+                                roles within the system. The objective encompasses developing a user-friendly
+                                interface
+                                that allows users to register, log in, post Cars for sale with pictures,
+                                deactivate
+                                existing car sales, update their profiles, book appointments for test drives,
+                                and place
                                 bidding prices. Administrators, on the other hand, are tasked with managing user
                                 accounts, activating or deactivating car posts, marking users as administrators,
-                                approving, or denying appointments based on bidding, updating their profiles, and
+                                approving, or denying appointments based on bidding, updating their profiles,
+                                and
                                 handling sales transactions.
                             </p>
                             <a href="https://github.com/username/abc-cars-portal" class="btn btn-primary"
@@ -777,15 +935,16 @@
         </div>
     </section>
     <!--Contact-Us Section-->
-    <section class="container-fluid contact-section" id="contact-us">
-        <h2 class="section-heading text-center">Contact Me</h2>
+    <section class="container-fluid contact-section" id="contact-us" data-bg-color="#fefefe">
+        <h2 class="section-heading-h1 text-center">Contact Me</h2>
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title" id="contact-name">Gian Raphael Delos Reyes Alcantara</h5>
+                        <h5 class="card-title" id="contact-name">Gian Raphael D. Alcantara</h5>
                         <p class="card-text" id="contact-number">+63 922 774 3588</p>
-                        <p class="card-text" id="contact-address">Maharlika Street, City of San Jose Del Monte Bulacan,
+                        <p class="card-text" id="contact-address">Maharlika Street, City of San Jose Del Monte
+                            Bulacan,
                             Philippines</p>
                         <div class="container">
                             <!-- GitHub Section -->
@@ -811,8 +970,7 @@
                                     </div>
                                     <div class="col">
                                         <a href="https://www.facebook.com/profile.php?id=100074224394563"
-                                            class="account-name">Gian
-                                            Alcantara</a>
+                                            class="account-name">Gian Alcantara</a>
                                     </div>
                                 </div>
                             </div>
@@ -826,8 +984,7 @@
                                     </div>
                                     <div class="col">
                                         <a href="https://www.linkedin.com/in/gian-alcantara-7293282a9/"
-                                            class="account-name">Gian
-                                            Alcantara</a>
+                                            class="account-name">Gian Alcantara</a>
                                     </div>
                                 </div>
                             </div>
@@ -840,7 +997,7 @@
                                         <img src="img/google-logo.png" alt="Gmail Logo" class="social-logo">
                                     </div>
                                     <div class="col">
-                                        <a href="mailto:youremail@gmail.com"
+                                        <a href="mailto:raphaelalcantara51@gmail.com"
                                             class="account-name">raphaelalcantara51@gmail.com</a>
                                     </div>
                                 </div>
@@ -849,19 +1006,15 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="map-container">
-                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
-                        src="https://maps.google.com/maps?width=724&amp;height=400&amp;hl=en&amp;q=%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-                </div>
-                <a href='https://www.easybooking.eu/'>Hotelsoftware</a>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img src="img/coding.gif" alt="Location Image" class="img-fluid shadow w-100">
             </div>
         </div>
     </section>
     <!--Footer-->
     <footer class="text-light text-center py-4">
         <div class="container" id="footer">
-            <p class="mb-0">&copy; 2024 - Gian Alcantara. All rights reserved.</p>
+            <p class="mb-0">&copy; <span id="current-year"></span> - Gian Alcantara. All rights reserved.</p>
         </div>
     </footer>
 </body>
@@ -869,7 +1022,64 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type='text/javascript'
-    src='https://embedmaps.com/google-maps-authorization/script.js?id=b3aff6766cc854bc3edc64e29e0032bebd8afd72'></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var options = {
+            strings: ["I'm Gian Raphael D. Alcantara"],
+            typeSpeed: 100, // Slower typing speed
+            backSpeed: 40, // Slower backspacing speed
+            loop: true,
+            showCursor: true,
+            cursorChar: '|'
+        };
+
+        var typed = new Typed('#typed-output', options);
+    });
+
+    $(document).ready(function () {
+        $('.scroll-content').hover(
+            function () {
+                $(this).css('animation-play-state', 'paused');
+            },
+            function () {
+                $(this).css('animation-play-state', 'running');
+            }
+        );
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var yearSpan = document.getElementById('current-year');
+        var currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const navbar = document.querySelector('.navbar');
+        const sections = document.querySelectorAll('section');
+
+        function changeNavbarColor() {
+            let currentSection = null;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                if (window.scrollY >= sectionTop - navbar.offsetHeight && window.scrollY < sectionTop + sectionHeight) {
+                    currentSection = section;
+                }
+            });
+
+            if (currentSection) {
+                const bgColor = currentSection.getAttribute('data-bg-color');
+                navbar.style.backgroundColor = bgColor;
+            }
+        }
+
+        window.addEventListener('scroll', changeNavbarColor);
+        changeNavbarColor(); // Initial call to set the correct color on page load
+    });
+
+</script>
 
 </html>
