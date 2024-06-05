@@ -971,6 +971,7 @@ footer {
     .welcome-header-h1 {
         margin-left: 0px;
         font-size: 1.5rem;
+        font-weight: 800;
     }
 
     #h2-skills {
