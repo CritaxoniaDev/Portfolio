@@ -398,7 +398,7 @@ body {
 .welcome-header-h1 {
     font-size: 65px;
     font-weight: 700;
-    color: rgb(56, 34, 73);
+    color: rgb(228, 208, 244);
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
@@ -446,12 +446,13 @@ body {
 #h2-skills {
     font-family: "Signika", sans-serif;
     margin-bottom: -17px;
+    color: white;
 }
 
 .subheading {
     font-size: 35px;
     font-weight: 300;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-family: "Oswald", sans-serif;
     margin-top: -5px;
@@ -484,7 +485,7 @@ body {
 .about-me-section-h1 {
     font-size: 50px;
     font-family: "Roboto Condensed", sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .about-me-content {
@@ -542,7 +543,7 @@ body {
 .section-heading {
     font-size: 50px;
     font-family: "Roboto Condensed", sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding-bottom: 20px;
 }
@@ -943,262 +944,4 @@ footer {
     background-color: rgb(13, 33, 37);
     font-size: 25px;
     font-family: "Roboto Condensed", sans-serif;
-}
-
-/*Responsiveness */
-
-@media (max-width: 768px) {
-    .navbar-nav li {
-        font-size: 13px;
-    }
-
-    .navbar-brand .header-name {
-        font-size: 18px;
-    }
-}
-
-/*Home Page */
-@media (max-width: 768px) {
-    #home {
-        background-position: 50% 6.5%;
-        /* Adjust background position for mobile */
-        padding: 50px;
-        /* Adjust padding for mobile */
-        margin: 0;
-        /* Reset margin for mobile */
-    }
-
-    .welcome-header-h1 {
-        margin-left: 0px;
-        font-size: 1.5rem;
-        font-weight: 800;
-    }
-
-    #h2-skills {
-        font-size: 17px;
-    }
-
-    #home-icons {
-        font-size: 2px;
-    }
-
-    .ui-btn {
-        padding: 8px;
-        font-size: 10px;
-    }
-
-    #about-us-pic {
-        width: 250px;
-        height: 250px;
-    }
-
-    .welcome-header-h2-skills {
-        font-size: 1.3rem;
-    }
-
-    .subheading {
-        padding-top: 20px;
-        font-size: 1rem;
-        /* Adjust the font size as needed */
-    }
-}
-
-/*About Me Page */
-@media (max-width: 768px) {
-    .about-me-section {
-        padding: 20px;
-        /* Add padding for better spacing on small screens */
-    }
-
-    .about-me-section-h1 {
-        font-size: 35px;
-    }
-
-    .about-me-content {
-        text-align: justify;
-        /* Justify text alignment for better readability */
-    }
-
-    .bubble-chat p {
-        font-size: 14px;
-        /* Decrease font size for smaller screens */
-    }
-
-    .about-me-image {
-        text-align: center;
-        /* Center image on small screens */
-        margin-top: 20px;
-        width: 300px;
-        height: 300px;
-        /* Add margin for better spacing */
-    }
-
-}
-
-/*Education Page */
-@media (max-width: 768px) {
-    .education-section {
-        padding: 20px;
-        /* Add padding for better spacing on small screens */
-    }
-
-    .card-img-top-1,
-    .card-img-top-2,
-    .card-img-top-3 {
-        width: 500px;
-        height: 200px;
-    }
-
-    .section-heading {
-        font-size: 40px;
-    }
-
-    .education-section {
-        padding: 60px;
-    }
-
-    .card-body {
-        text-align: justify;
-        /* Justify text alignment for better readability */
-    }
-
-    .card-body h2,
-    .card-body p {
-        font-size: 14px;
-        /* Decrease font size for smaller screens */
-    }
-}
-
-/*Skills Page */
-@media (max-width: 768px) {
-    #skill {
-        font-size: 40px;
-    }
-
-    #technical-skills-tab,
-    #soft-skills-tab {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .skill-wrapper {
-        padding: 0px;
-    }
-
-    .skill-logo {
-        max-width: 50px;
-        max-height: 50px;
-        background-size: cover;
-    }
-
-    #skill-heading {
-        font-size: 27px;
-    }
-
-    #section-heading-h1 {
-        font-size: 35px;
-    }
-
-    #soft-skill-heading {
-        font-size: 25px;
-    }
-
-    #bi-fed,
-    #bi-bed,
-    #bi-ui,
-    #bi-webhost {
-        font-size: 25px;
-    }
-
-    #bi-1,
-    #bi-2,
-    #bi-3,
-    #bi-4,
-    #bi-5,
-    #bi-6,
-    #bi-7 {
-        font-size: 50px;
-    }
-    
-    #soft-skill-text {
-        font-size: 14px;
-    }
-}
-
-/*Education Page */
-@media (max-width: 768px) {
-    .card-title {
-        font-size: 1.2rem;
-        /* Adjust the font size as needed */
-    }
-
-    #school-name {
-        font-size: 1.8rem;
-        text-align: left;
-    }
-}
-
-/*Projects Page */
-@media (max-width: 768px) {
-    #project-heading {
-        font-size: 24px;
-        text-align: left;
-    }
-
-    .section-heading-h1 {
-        font-size: 40px;
-    }
-
-    #project-text {
-        font-size: 14px;
-    }
-
-    .projects-section {
-        padding: 20px;
-        /* Add padding for better spacing on small screens */
-    }
-
-    .card-body {
-        text-align: justify;
-        /* Justify text alignment for better readability */
-    }
-
-    .card-text {
-        font-size: 13px;
-        /* Decrease font size for smaller screens */
-    }
-
-    .card-img-top {
-        max-width: 100%;
-        /* Ensure images are responsive */
-    }
-
-    .languages-used .badge {
-        margin-right: 5px;
-        /* Add space between badges */
-    }
-}
-
-@media (max-width: 768px) {
-    #contact-name {
-        font-size: 30px;
-        text-align: left;
-    }
-
-    #contact-number {
-        font-size: 17px;
-    }
-
-    #contact-address {
-        font-size: 16px;
-        text-align: left;
-    }
-
-    .account-name {
-        font-size: 12px;
-    }
-
-    #footer {
-        font-size: 17px;
-    }
 }
