@@ -37,10 +37,7 @@
 
 body {
     background-repeat: no-repeat;
-    background: linear-gradient(to bottom,
-            #e6f2ff, #cce5ff, #b3d9ff, #99ccff, #80bfff,
-            #a16fd2, #7e49b4, #582a86, #301748, #1a0d27,
-            #170d22, #121212, #2d2d2d, #141414, #330033);
+    background: black;
 }
 
 .navbar {
